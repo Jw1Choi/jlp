@@ -27,11 +27,9 @@
         <script src="./main1/js/jquery.min.js"></script>
         <script src="./main1/js/jquery-ui.min.js"></script>
         <!-- Popper JS -->
-        <script
-            src="./main1/js/popper.min.js"></script>
+        <script src="./main1/js/popper.min.js"></script>
         <!-- Latest compiled JavaScript -->
-        <script
-            src="./main1/js/bootstrap.min.js"></script>
+        <script src="./main1/js/bootstrap.min.js"></script>
         <!-- CSS File -->
         <link rel="stylesheet" href="./form/css/style_tab.css">
         <link rel="stylesheet" href="./form/css/style_mob.css">
@@ -69,6 +67,10 @@
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/jquery.counterup.min.js"></script>
         <script src="js/jquery.simplyscroll.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 
         <script>
             $(document).ready(function ($) {
@@ -188,7 +190,7 @@
             <div class="container">
                 <div class="row d-flex align-items-center align-responsive">
                     <div class="col col-md-6 col-12 m-center text-white">
-                        <h2 class="wow fadeInUp two-title">아래 사항에 해당한다면<br>더 내고 있는 세금이 있는지<br>반드시 확인해보세요.</h2>
+                        <h2 class="wow fadeInUp two-title">현재 사항에 해당한다면<br>더 내는 세금이 있을 수 있습니다<br>반드시 확인해보세요.</h2>
                         <h3 class="txtAni two-text">아래에 해당한다면 현재 세금을<br>더 내고 있을 수 있습니다</h3><br>
                         <!-- <p>무직·연체중이 아니라면 신청가능</p> -->
                         <!-- <p class="small">*선착순 모집으로 예고없이 종료될 수 있습니다.</p> -->
@@ -198,7 +200,7 @@
                         <ul class="list-item list-text">
                             <li class="wow fadeInLeft">
                           <img src="./main1/img/icon1.png" alt="" class="mr-2">
-                                매출 대비 세금이 많은 것 같다
+                                매년 세금이 증가하고 있다
                             </li>
                             <li class="wow fadeInLeft" data-wow-delay="0.2s">
                                 <img src="./main1/img/icon1.png" alt="" class="mr-2">
@@ -209,6 +211,10 @@
                                 <img src="./main1/img/icon1.png" alt="" class="mr-2">
                                 직원 채용을 늘리고 있다
                             </li>
+                            <li class="wow fadeInLeft" data-wow-delay="0.5s">
+                                <img src="./main1/img/icon1.png" alt="" class="mr-2">
+                                직원 수의 변동이 많은 편이다
+                            </li>
                         </ul>
                         <!-- <div class="m-text text-center">
                             <a class="btn btn-darker scroll" href="#form2">자세히 알아보기</a>
@@ -218,6 +224,53 @@
             </div>
         </div>
 
+               <!-- 7 -->
+               <div class="contents bg-light" >
+                <div class="container">
+                    <div class="row d-flex align-items-center align-responsive">
+                        <div class="col col-md-6 col-12 m-center">
+                            <h2 class="wow fadeInUp">세금을 더 내는 원인과<br>꼭 환급 조회가 필요한 이유?</h2>
+                            <p class="two-text" style="line-height:140%;margin-bottom:30px;">아래 사항으로 1년에 사업자 1곳 마다<br>평균 794만원의 세금을 더 납부하고 있습니다.<br>5년 뒤 국고로 귀속되기 전 환급이 꼭 필요합니다.</p>
+                            
+                        </div>
+                        <div class="col col-md-6 col-12 mx-auto">  
+                            <ul class="list-item">
+                                
+                                <li class="wow fadeInLeft" data-wow-delay="0.2s">
+                                    <img src="./main1/img/icon5.png" alt="" class="mr-2">
+                                    세법 개정으로 인한 혜택 변경
+                                </li>
+                              
+                                <li class="wow fadeInLeft" data-wow-delay="0.4s">
+                                    <img src="./main1/img/icon7.png" alt="" class="mr-2">
+                                    세제 혜택을 제대로 챙기지 못했을 시
+                                </li>
+                                <li class="wow fadeInLeft" data-wow-delay="0.6s">
+                                    <img src="./main1/img/icon8.png" alt="" class="mr-2">
+                                    최신 개정 세법의 이해도 부족  
+                                </li>
+
+                                <li class="wow fadeInLeft" data-wow-delay="0.6s">
+                                    <img src="./main1/img/icon9.png" alt="" class="mr-2">
+                                    세무 대리를 맡겨도 모든 적용 어려움
+                                </li>
+
+                                <li class="wow fadeInLeft" data-wow-delay="0.6s">
+                                    <img src="./main1/img/icon9.png" alt="" class="mr-2">
+                                    5년 뒤 국고로 귀속되어 환급 불가
+                                </li>
+                              
+                            </ul>
+                            <div class="m-text text-center">
+                                <a class="btn btn-darker scroll" href="#form_e11">무료 환급 조회</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<img src="./img/introduce.png" style="width:100%;">
         
 
         <!-- 5 -->
@@ -226,13 +279,13 @@
                 <div class="row d-flex align-items-center">
                     <div class="col col-md-6 col-12">
                         <h2 class="wow fadeInLeft">
-                            5인 이상 사업자라면<br><span style="color:#2196F3;font-weight:900;">평균 <span class="counter" style="font-weight:900;bottom:0;color:#2196F3">2,200</span> 만원</span><br>세금 환급 받아가세요
+                            더 낸 세금 돌려 받으세요!<br>2명 중 1명이 현재<br><span style="color:#2196F3;font-weight:900;">평균 <span class="counter" style="font-weight:900;bottom:0;color:#2196F3">2,200</span> 만원</span><br>세금 환급 받고 계십니다
                         </h2>
-                        
-                        <p>한도는 올리고 금리는 낮췄습니다.
-                        </p><br>
+                        <br>
+                        <p style="font-size:20px;line-height:160%;">최신 세법을 토대로 서울대 회계사가<br>몰라서 더 낸 세금 전부 찾아서<br><u style="text-underline-position:under">1원도 빠짐없이 모두 환급해드립니다.</u>
+                        </p><br><br><br>
 
-                        <a class="btn btn-darker scroll" href="#form">무료 환급금 받기</a>
+                        <a class="btn btn-darker scroll" href="#form_e11">무료 환급금 조회</a>
                     </div>
                     <div class="col col-md-6 col-12 p-0">
                        <video src="./img/intro_phone-ezgif.com-gif-to-mp4-converter.mp4" autoplay muted loop playsinline style="width:100%;"></video>
@@ -286,51 +339,163 @@ playAnim()
 playAnim();
            </script>
 
-        <!-- 7 -->
-        <div class="contents bg-darker">
-            <div class="container">
-                <div class="row d-flex align-items-center align-responsive">
-                    <div class="col col-md-6 col-12 m-center text-white">
-                        <h2 class="wow fadeInUp">이런 사업자라면,<br>반드시 확인해보세요.</h2>
-                        <p>무직·연체중이 아니라면 신청가능</p>
-                        <p class="small">*선착순 모집으로 예고없이 종료될 수 있습니다.</p>
-                        <!-- <a class="btn btn-light scroll p-text" href="#form">자세히 알아보기</a> -->
-                    </div>
-                    <div class="col col-md-6 col-12 mx-auto">  
-                        <ul class="list-item">
-                            <li class="wow fadeInLeft">
-                                <img src="./main1/img/icon_01.png" alt="" class="mr-2">
-                                매출 대비 세금이 많은 것 같다
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-delay="0.2s">
-                                <img src="./main1/img/icon_02.png" alt="" class="mr-2">
-                                한도 : 1억원
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-delay="0.5s">
-                                <img src="./main1/img/icon_03.png" alt="" class="mr-2">
-                                상환기간 : 10년
-                            </li>
-                          
-                        </ul>
-                        <div class="m-text text-center">
-                            <a class="btn btn-darker scroll" href="#form2">자세히 알아보기</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+ 
+
+
+ <!--section3-->
+ <article class="section3">
+    <div class="wrap1">
+      <h2 class="main_title center up-on-scroll">실제 세금 환급 사례<span class="blue"></span></h2>
+
+      <div class="content">
+        <div class="left">
+          <h2 class="gmarket">주식회사 구**</h2>
+          <h3>법인사업자 / 도소매업 / 직원 평균 64명<br>
+            </h3>
+          <div class="bottom_wrap" style="text-align: -webkit-center;">
+            <!-- <img src="./hoogi/img/boy.png"> -->
+            <h4 style="line-height:240%;">
+              <span>세금 환급금 총합</span><br>
+              <span class="counter txtAni" style="color:red;">326,398,042</span><span>원</span>
+            </h4>
+          </div>
         </div>
+        <div class="right">
+          <div class="top_table">
+            <table>
+              <colgroup>
+                <col style="width:25%;"></col>
+                <col style="width:25%;"></col>
+               
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>금액(원)</th>
+                 
+                </tr>
+              </thaed>
+              <tbody>
+                <tr>
+                  <td>국세환급효과</td>
+                  <td>360,660,042</td>
+                
+                </tr>
+                <tr>
+                  <td>지방세환급효과</td>
+                  <td>0</td>
+                 
+                </tr>
+                <tr>
+                  <td>농특세효과</td>
+                  <td>(34,262,000)</td>
+               
+                </tr>
+                <tr>
+                  <td>환급효과 합계</td>
+                  <td>326,398,042</td>
+                
+                </tr>
+                <tr>
+                  <td>이월세액효과</td>
+                  <td>0</td>
+                 
+                </tr>
+                <tr class="borderline">
+                  <td style="color:red;" >절세 효과 합계</td>
+                  <td class="counter" style="color:red;">326,398,042</td>
+                
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+       
+        </div>
+      </div>
+      <div class="content content2">
+        <div class="left">
+          <h2 class="gmarket">주식회사 메**</h2>
+          <h3>법인사업자 / 의약품 도소매업 / 직원 평균 8.41명<br>
+            </h3>
+          <div class="bottom_wrap" style="text-align: -webkit-center;">
+            <!-- <img src="./hoogi/img/boy.png"> -->
+            <h4 style="line-height:240%;">
+              <span>세금 환급금 총합</span><br>
+              <span class="counter txtAni" style="color:red;">186,642,354</span><span>원</span>
+            </h4>
+          </div>
+        </div>
+        <div class="right">
+          <div class="top_table">
+            <table>
+              <colgroup>
+                <col style="width:25%;"></col>
+                <col style="width:25%;"></col>
+               
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>금액(원)</th>
+                 
+                </tr>
+              </thaed>
+              <tbody>
+                <tr>
+                  <td>국세환급효과</td>
+                  <td>225,709,304</td>
+                
+                </tr>
+                <tr>
+                  <td>지방세환급효과</td>
+                  <td>0</td>
+                 
+                </tr>
+                <tr>
+                  <td>농특세효과</td>
+                  <td>(39,066,950)</td>
+               
+                </tr>
+                <tr>
+                  <td style="color:red;font-weight:bold;">환급효과 합계</td>
+                  <td class="counter" style="color:red;font-weight:bold;">186,642,354</td>
+                
+                </tr>
+                <tr>
+                  <td>이월세액효과</td>
+                  <td>92,275,249</td>
+                 
+                </tr>
+                <tr class="borderline">
+                  <td>절세 효과 합계</td>
+                  <td >278,917,603</td>
+                
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+       
+        </div>
+      </div>
+   
+    </div>
+  </article>
+
+
+
+
 
 
 
 
         
 
-                
-                <article id="post-15" class="post-15 page type-page status-publish hentry">
-                    <div class="entry-content">
+          
                         <div class="main"  style="padding-top:0px;">
-        <div class="visual">
-            <img src="./img/tax2.png" style="filter:brightness(0.5)">
+        <!-- <div class="visual">
+            <img src="./img/introduce.png" style="width:100%;">
             <div class="inner">
                 <div class="title">
                     <h2>
@@ -347,271 +512,168 @@ playAnim();
                         Your promising partner, NH REITs                </p>
                 </div>
             </div>
-        </div>
+        </div> -->
     
-    
-    
+     
+
+          
+    <article id="post-15" class="post-15 page type-page status-publish hentry">
+        <div class="entry-content">
         <section class="recommend" style="background: #fff;">
             <div class="inner">
                 <div class="title" data-aos="fade-up">
-                    <h3>고객의 자산을 최우선으로<br>생각하는 최고의 파트너의 추천</h3>
+                    <h3>지금 이 순간에도 많은 사업체들이<br>최대 환급금을 받아가고 계십니다</h3>
                 </div>
     
                 <div class="swiper_wrap" data-aos="fade-up" data-aos-delay="200">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
     
-                                                    <div class="swiper-slide">
+    
+                            <div class="swiper-slide">
                                 <div class="thumb">
-                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.nhreits.com/wp-content/uploads/2023/06/img_asset01.png"><noscript><img src="https://www.nhreits.com/wp-content/uploads/2023/06/img_asset01.png" alt=""></noscript>
+                                    <img src="./img/h3.png" ><noscript><img src="./img/h3.png" alt=""></noscript>
                                 </div>
                                 <div class="card">
                                     <div class="txt">
-                                        <em class="category">
-                                            REITs                                    </em>
+                                        <em >
+                                            더 낸 세금                                    </em>
                                         <strong>
-                                            서울스퀘어                                    </strong>
+                                            141,077,352원                                   </strong>
                                         <p>
-                                            PRIME                                    </p>
+                                            환급                                    </p>
                                     </div>
-                                    <div class="btn_area">
-                                        <a href="/asset/introduction/id392" class="btn_view">
-                                            <span>자세히보기</span>
-                                        </a>
-                                    </div>
+                                    
                                 </div>
                             </div>
     
-                                                    <div class="swiper-slide">
+    
+                            <div class="swiper-slide">
                                 <div class="thumb">
-                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.nhreits.com/wp-content/uploads/2023/06/img_asset02.png"><noscript><img src="https://www.nhreits.com/wp-content/uploads/2023/06/img_asset02.png" alt=""></noscript>
+                                    <img src="./img/h4.png" ><noscript><img src="./img/h4.png" alt=""></noscript>
                                 </div>
                                 <div class="card">
                                     <div class="txt">
-                                        <em class="category">
-                                            REITs                                    </em>
+                                        <em >
+                                            더 낸 세금                                    </em>
                                         <strong>
-                                            강남N타워                                    </strong>
+                                            81,273,696원                                   </strong>
                                         <p>
-                                            PRIME                                    </p>
+                                            환급                                    </p>
                                     </div>
-                                    <div class="btn_area">
-                                        <a href="/asset/introduction/id400" class="btn_view">
-                                            <span>자세히보기</span>
-                                        </a>
-                                    </div>
+                                    
                                 </div>
                             </div>
     
-                                                    <div class="swiper-slide">
+    
+                            <div class="swiper-slide">
                                 <div class="thumb">
-                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.nhreits.com/wp-content/uploads/2023/06/삼성물산-서초사옥.png"><noscript><img src="https://www.nhreits.com/wp-content/uploads/2023/06/삼성물산-서초사옥.png" alt=""></noscript>
+                                    <img src="./img/h5.png" >
                                 </div>
                                 <div class="card">
                                     <div class="txt">
-                                        <em class="category">
-                                            REITs                                    </em>
+                                        <em >
+                                            더 낸 세금                                    </em>
                                         <strong>
-                                            삼성물산 서초사옥                                    </strong>
+                                            40,827,897원                                   </strong>
                                         <p>
-                                            PRIME                                    </p>
+                                            환급                                    </p>
                                     </div>
-                                    <div class="btn_area">
-                                        <a href="/asset/introduction/id736" class="btn_view">
-                                            <span>자세히보기</span>
-                                        </a>
-                                    </div>
+                                    
                                 </div>
                             </div>
     
-                                                    <div class="swiper-slide">
+    
+                            <div class="swiper-slide">
                                 <div class="thumb">
-                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.nhreits.com/wp-content/uploads/2023/06/삼성-SDS타워.png"><noscript><img src="https://www.nhreits.com/wp-content/uploads/2023/06/삼성-SDS타워.png" alt=""></noscript>
+                                    <img src="./img/h6.png" ><noscript><img src="./img/h6.png" alt=""></noscript>
                                 </div>
                                 <div class="card">
                                     <div class="txt">
-                                        <em class="category">
-                                            REITs                                    </em>
+                                        <em >
+                                            더 낸 세금                                    </em>
                                         <strong>
-                                            삼성 SDS타워                                    </strong>
+                                            34,942,081원                                   </strong>
                                         <p>
-                                            PRIME                                    </p>
+                                            환급                                    </p>
                                     </div>
-                                    <div class="btn_area">
-                                        <a href="/asset/introduction/id748" class="btn_view">
-                                            <span>자세히보기</span>
-                                        </a>
-                                    </div>
+                                    
                                 </div>
                             </div>
     
-                                                    <div class="swiper-slide">
+    
+                            <div class="swiper-slide">
                                 <div class="thumb">
-                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.nhreits.com/wp-content/uploads/2023/06/분당스퀘어.png"><noscript><img src="https://www.nhreits.com/wp-content/uploads/2023/06/분당스퀘어.png" alt=""></noscript>
+                                    <img src="./img/h7.png" ><noscript><img src="./img/h7.png" alt=""></noscript>
                                 </div>
                                 <div class="card">
                                     <div class="txt">
-                                        <em class="category">
-                                            REITs                                    </em>
+                                        <em >
+                                            더 낸 세금                                    </em>
                                         <strong>
-                                            분당스퀘어                                    </strong>
+                                            24,422,933원                                   </strong>
                                         <p>
-                                            ALL ONE                                    </p>
+                                            환급                                    </p>
                                     </div>
-                                    <div class="btn_area">
-                                        <a href="/asset/introduction/id760" class="btn_view">
-                                            <span>자세히보기</span>
-                                        </a>
-                                    </div>
+                                    
                                 </div>
                             </div>
     
-                                                    <div class="swiper-slide">
+                            <div class="swiper-slide">
                                 <div class="thumb">
-                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.nhreits.com/wp-content/uploads/2023/06/당산-에이원타워.png"><noscript><img src="https://www.nhreits.com/wp-content/uploads/2023/06/당산-에이원타워.png" alt=""></noscript>
+                                    <img src="./img/h8.png" ><noscript><img src="./img/h8.png" alt=""></noscript>
                                 </div>
                                 <div class="card">
                                     <div class="txt">
-                                        <em class="category">
-                                            REITs                                    </em>
+                                        <em >
+                                            더 낸 세금                                    </em>
                                         <strong>
-                                            당산 에이원타워                                    </strong>
+                                            14,396,594원                                   </strong>
                                         <p>
-                                            ALL ONE & NH3 호                                    </p>
+                                            환급                                    </p>
                                     </div>
-                                    <div class="btn_area">
-                                        <a href="/asset/introduction/id772" class="btn_view">
-                                            <span>자세히보기</span>
-                                        </a>
-                                    </div>
+                                    
                                 </div>
                             </div>
     
-                                                    <div class="swiper-slide">
+    
+                            <div class="swiper-slide">
                                 <div class="thumb">
-                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.nhreits.com/wp-content/uploads/2023/06/인계-에이원타워.png"><noscript><img src="https://www.nhreits.com/wp-content/uploads/2023/06/인계-에이원타워.png" alt=""></noscript>
+                                    <img src="./img/h9.png" ><noscript><img src="./img/h9.png" alt=""></noscript>
                                 </div>
                                 <div class="card">
                                     <div class="txt">
-                                        <em class="category">
-                                            REITs                                    </em>
+                                        <em >
+                                            더 낸 세금                                    </em>
                                         <strong>
-                                            인계 에이원타워                                    </strong>
+                                            19,374,437원                                   </strong>
                                         <p>
-                                            ALL ONE & NH3 호                                    </p>
+                                            환급                                    </p>
                                     </div>
-                                    <div class="btn_area">
-                                        <a href="/asset/introduction/id784" class="btn_view">
-                                            <span>자세히보기</span>
-                                        </a>
-                                    </div>
+                                    
                                 </div>
                             </div>
     
-                                                    <div class="swiper-slide">
-                                <div class="thumb">
-                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.nhreits.com/wp-content/uploads/2023/06/이천-도지물류센터.png"><noscript><img src="https://www.nhreits.com/wp-content/uploads/2023/06/이천-도지물류센터.png" alt=""></noscript>
-                                </div>
-                                <div class="card">
-                                    <div class="txt">
-                                        <em class="category">
-                                            REITs                                    </em>
-                                        <strong>
-                                            이천 도지물류센터                                    </strong>
-                                        <p>
-                                            ALL ONE & NH5 호                                    </p>
-                                    </div>
-                                    <div class="btn_area">
-                                        <a href="/asset/introduction/id796" class="btn_view">
-                                            <span>자세히보기</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
     
-                                                    <div class="swiper-slide">
-                                <div class="thumb">
-                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.nhreits.com/wp-content/uploads/2023/06/금남로-에이원타워.png"><noscript><img src="https://www.nhreits.com/wp-content/uploads/2023/06/금남로-에이원타워.png" alt=""></noscript>
-                                </div>
-                                <div class="card">
-                                    <div class="txt">
-                                        <em class="category">
-                                            REITs                                    </em>
-                                        <strong>
-                                            금남로 에이원타워                                    </strong>
-                                        <p>
-                                            ALL ONE & NH7 호                                    </p>
-                                    </div>
-                                    <div class="btn_area">
-                                        <a href="/asset/introduction/id808" class="btn_view">
-                                            <span>자세히보기</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
     
-                                                    <div class="swiper-slide">
+                            <div class="swiper-slide">
                                 <div class="thumb">
-                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.nhreits.com/wp-content/uploads/2023/06/광주역-에이원타워.png"><noscript><img src="https://www.nhreits.com/wp-content/uploads/2023/06/광주역-에이원타워.png" alt=""></noscript>
+                                    <img src="./img/h10.png" ><noscript><img src="./img/h10.png" alt=""></noscript>
                                 </div>
-                                <div class="card">
+                                <div class="card" >
                                     <div class="txt">
-                                        <em class="category">
-                                            REITs                                    </em>
+                                        <em >
+                                            더 낸 세금                                    </em>
                                         <strong>
-                                            광주역 에이원타워                                    </strong>
+                                            19,46,509원                                   </strong>
                                         <p>
-                                            ALL ONE & NH7 호                                    </p>
+                                            환급                                    </p>
                                     </div>
-                                    <div class="btn_area">
-                                        <a href="/asset/introduction/id820" class="btn_view">
-                                            <span>자세히보기</span>
-                                        </a>
-                                    </div>
+                                    
                                 </div>
                             </div>
+                           
     
-                                                    <div class="swiper-slide">
-                                <div class="thumb">
-                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.nhreits.com/wp-content/uploads/2023/06/방배-청남빌딩.png"><noscript><img src="https://www.nhreits.com/wp-content/uploads/2023/06/방배-청남빌딩.png" alt=""></noscript>
-                                </div>
-                                <div class="card">
-                                    <div class="txt">
-                                        <em class="category">
-                                            REITs                                    </em>
-                                        <strong>
-                                            방배 청남빌딩                                    </strong>
-                                        <p>
-                                            NH1 호                                    </p>
-                                    </div>
-                                    <div class="btn_area">
-                                        <a href="/asset/introduction/id832" class="btn_view">
-                                            <span>자세히보기</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-    
-                                                    <div class="swiper-slide">
-                                <div class="thumb">
-                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://www.nhreits.com/wp-content/uploads/2023/06/N스퀘어.png"><noscript><img src="https://www.nhreits.com/wp-content/uploads/2023/06/N스퀘어.png" alt=""></noscript>
-                                </div>
-                                <div class="card">
-                                    <div class="txt">
-                                        <em class="category">
-                                            FUND                                    </em>
-                                        <strong>
-                                            N스퀘어                                    </strong>
-                                        <p>
-                                            ALL ONE & NH7 호                                    </p>
-                                    </div>
-                                    <div class="btn_area">
-                                        <a href="/asset/introduction/id844" class="btn_view">
-                                            <span>자세히보기</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
     
                                                 </div>
                     </div>
@@ -710,263 +772,125 @@ playAnim();
 
             
 
-        <!-- 7 -->
-        <div class="contents bg-light" >
-            <div class="container">
-                <div class="row d-flex align-items-center align-responsive">
-                    <div class="col col-md-6 col-12 m-center">
-                        <h2 class="wow fadeInUp">상품비교는 어렵지만<br>조건확인은 쉽습니다</h2>
-                        <p>내 조건에 딱 맞는 최저금리의 금융상품을<br>한 번에 확인하고 신청할 수 있습니다.</p>
-                        <p class="small">*무직 · 연체자 접수불가</p>
-                    </div>
-                    <div class="col col-md-6 col-12 mx-auto">  
-                        <ul class="list-item">
-                            <li class="wow fadeInLeft">
-                                <img src="./main1/img/icon1.png" alt="" class="mr-2">
-                                신청 대상 25세부터 55세까지
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-delay="0.2s">
-                                <img src="./main1/img/icon5.png" alt="" class="mr-2">
-                                4대보험 가입된 직장인 우대
-                            </li>
-                            <!-- <li class="wow fadeInLeft" data-wow-delay="0.4s">
-                                <img src="./main1/img/icon6.png" alt="" class="mr-2">
-                                집 · 자동차 등 자산 소유자 우대
-                            </li> -->
-                            <li class="wow fadeInLeft" data-wow-delay="0.4s">
-                                <img src="./main1/img/icon7.png" alt="" class="mr-2">
-                                소득확인이 가능한 자
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-delay="0.6s">
-                                <img src="./main1/img/icon8.png" alt="" class="mr-2">
-                                신용점수 600점 이상
-                            </li>
-                            <li class="wow fadeInLeft" data-wow-delay="0.8s">
-                                <img src="./main1/img/icon9.png" alt="" class="mr-2">
-                                무직 · 연체자 접수불가
-                            </li>
-                        </ul>
-                        <div class="m-text text-center">
-                            <a class="btn btn-darker scroll" href="#form2">자세히 알아보기</a>
+            <section class="sec04">
+                <div class="w1600">
+                    <div class="flex-box">
+                        <div class="title_text">
+                            <h2 data-aos="fade-right" data-aos-anchor=".sec04" data-aos-delay="200"><span style="letter-spacing: -0.02em;">안심하세요!</span> <br>진평회계법인은 신뢰를 통해<br>많은 업체와 함께하고 있습니다</h2>
+                        </div>
+                        <div class="logo-rolling" data-aos="fade-in"  data-aos-anchor=".sec04" data-aos-delay="200">
+                            <div class="logo-wrap right">
+                                <ul>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/com1.png" >
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/com2.png" >
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/com3.png" >
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/com4.png" >
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/com5.png" >
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/com6.png" >
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="logo-wrap left">
+                                <ul>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/com7.png" >
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/com8.png" >
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/com9.png" >
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/com10.png" >
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/com11.png" >
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/com12.png" >
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
+
+
+
+       
+ <!-- 7 -->
+ <div class="contents bg-darker">
+    <div class="container">
+        <div class="row d-flex align-items-center align-responsive">
+            <div class="col col-md-6 col-12 m-center text-white">
+                <h2 class="wow fadeInUp two-title">진평 회계 법인은 약속드립니다</h2>
+                <h3 class="two-text">여러분이 더 낸 세금을 전부 찾아 드리겠습니다</h3><br>
+                
+            </div>
+            <div class="col col-md-6 col-12 mx-auto">  
+                <ul class="list-item list-text">
+                    <li class="wow fadeInLeft">
+                  <img src="./main1/img/icon1.png" alt="" class="mr-2">
+                        최신 세법 조항을 전부 찾아 1원까지 찾아드립니다
+                    </li>
+                    <li class="wow fadeInLeft" data-wow-delay="0.2s">
+                        <img src="./main1/img/icon1.png" alt="" class="mr-2">
+                        까다로운 법률로 꺼려하는 세제 혜택까지 받아드립니다
+                    </li>
+                 
+                    <li class="wow fadeInLeft" data-wow-delay="0.5s">
+                        <img src="./main1/img/icon1.png" alt="" class="mr-2">
+                        고용 지원금 혜택을 전부 적용시켜 드립니다 
+                    </li>
+                    <li class="wow fadeInLeft" data-wow-delay="0.5s">
+                        <img src="./main1/img/icon1.png" alt="" class="mr-2">
+                        추가 절세 혜택까지 찾아드립니다
+                    </li>
+                </ul>
+                <!-- <div class="m-text text-center">
+                    <a class="btn btn-darker scroll" href="#form2">자세히 알아보기</a>
+                </div> -->
             </div>
         </div>
-    
-
-
-
-        <!--section3-->
-        <article class="section3">
-            <div class="wrap1">
-              <h2 class="main_title center up-on-scroll">대출 <span class="blue">이용후기</span></h2>
-      
-              <div class="content">
-                <div class="left">
-                  <h2 class="gmarket">김OO (45세)</h2>
-                  <h3>개인사업자 / 연 매출 5천만원 / 운영기간 2년<br>
-                    여유자금과 부담되는 기존대출 월 불입금으로 신청</h3>
-                  <div class="bottom_wrap">
-                    <img src="./hoogi/img/boy.png">
-                    <h4>
-                      <span >채무통합(월 불입금 50만원 절약)</span>
-                      <span >여유자금 700만원 실행</span>
-                    </h4>
-                  </div>
-                </div>
-                <div class="right">
-                  <div class="top_table">
-                    <table>
-                      <colgroup>
-                        <col style="width:25%;"></col>
-                        <col style="width:25%;"></col>
-                        <col style="width:25%;"></col>
-                        <col style="width:25%;"></col>
-                      </colgroup>
-                      <thead>
-                        <tr>
-                          <th>금융사</th>
-                          <th>대출금액(원)</th>
-                          <th>금리</th>
-                          <th>월 상환금액(원)</th>
-                        </tr>
-                      </thaed>
-                      <tbody>
-                        <tr>
-                          <td>국*은행</td>
-                          <td>25,000,000</td>
-                          <td>4.0%</td>
-                          <td>460,413</td>
-                        </tr>
-                        <tr>
-                          <td>S**저축은행</td>
-                          <td>8,000,000</td>
-                          <td>18.0%</td>
-                          <td>277,323</td>
-                        </tr>
-                        <tr>
-                          <td>웰*저축은행</td>
-                          <td>10,000,000</td>
-                          <td>19.9%</td>
-                          <td>277,323</td>
-                        </tr>
-                        <tr>
-                          <td>S**대부</td>
-                          <td>15,000,000</td>
-                          <td>20.0%</td>
-                          <td>577,454</td>
-                        </tr>
-                        <tr>
-                          <td>산*머니</td>
-                          <td>5,000,000</td>
-                          <td>24.0%</td>
-                          <td>196,164</td>
-                        </tr>
-                        <tr class="borderline">
-                          <td>총계</td>
-                          <td class="counter txtAni">63,000,000</td>
-                          <td></td>
-                          <td>1,862,481</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-      
-                  <div class="bottom_table">
-                    <table>
-                      <colgroup>
-                        <col style="width:25%;"></col>
-                        <col style="width:25%;"></col>
-                        <col style="width:25%;"></col>
-                        <col style="width:25%;"></col>
-                      </colgroup>
-                      <thead>
-                        <tr>
-                          <th>금융사</th>
-                          <th>대출금액(원)</th>
-                          <th>금리</th>
-                          <th>월 상환금액(원)</th>
-                        </tr>
-                      </thaed>
-                      <tbody>
-                        <tr>
-                          <td>국*은행</td>
-                          <td>25,000,000</td>
-                          <td>4.0%</td>
-                          <td>460,413</td>
-                        </tr>
-                        <tr>
-                          <td>S**저축은행</td>
-                          <td>25,000,000</td>
-                          <td>8.0%</td>
-                          <td>506,910</td>
-                        </tr>
-                        <tr>
-                          <td>롯*캐피탈</td>
-                          <td>20,000,000</td>
-                          <td>7.0%</td>
-                          <td>396,024</td>
-                        </tr>
-                        <tr class="borderline">
-                          <td>총계</td>
-                          <td class="txtAni counter">70,000,000</td>
-                          <td></td>
-                          <td>1,363,347</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-      
-              <div class="content content2">
-                <div class="left">
-                  <h2 class="gmarket">박OO (51세)</h2>
-                  <h3>개인사업자 / 연 매출 8천만원 / 운영기간 1년 6개월<br>
-                    1금융권 대출한도 부족으로 부결 사업 운영자금 문의</h3>
-                  <div class="bottom_wrap">
-                    <img src="./hoogi/img/girl.png">
-                    <h4>
-                      <!-- <img src="./img/hand.png"> -->
-                      <span class="gmarket">여유자금 5000만원 대출 실행</span>
-                    </h4>
-                  </div>
-                </div>
-                <div class="right">
-                  <div class="top_table">
-                    <table>
-                      <colgroup>
-                        <col style="width:33.33%;"></col>
-                        <col style="width:33.33%;"></col>
-                        <col style="width:33.33%;"></col>
-                      </colgroup>
-                      <thead>
-                        <tr>
-                          <th>금융사</th>
-                          <th>대출금액(원)</th>
-                          <th>금리</th>
-                        </tr>
-                      </thaed>
-                      <tbody>
-                        <tr>
-                          <td>신**재단</td>
-                          <td>50,000,000</td>
-                          <td>1.0%</td>
-                        </tr>
-                        <tr class="borderline">
-                          <td>기*은행</td>
-                          <td>25,000,000</td>
-                          <td>5.0%</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-      
-                  <div class="bottom_table">
-                    <table>
-                      <colgroup>
-                        <col style="width:33.33%;"></col>
-                        <col style="width:33.33%;"></col>
-                        <col style="width:33.33%;"></col>
-                      </colgroup>
-                      <thead>
-                        <tr>
-                          <th>금융사</th>
-                          <th>대출금액(원)</th>
-                          <th>금리</th>
-                        </tr>
-                      </thaed>
-                      <tbody>
-                        <tr>
-                          <td>신**재단</td>
-                          <td>50,000,000</td>
-                          <td>1.0%</td>
-                        </tr>
-                        <tr>
-                          <td>기*은행</td>
-                          <td>25,000,000</td>
-                          <td>5.0%</td>
-                        </tr>
-                        <tr class="point">
-                          <td>롯*캐피탈</td>
-                          <td>35,000,000</td>
-                          <td>5.9%</td>
-                        </tr>
-                        <tr class="borderline point">
-                          <td>친*저축은행</td>
-                          <td>15,000,000</td>
-                          <td>8.0%</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-      
-            </div>
-          </article>
-
+    </div>
+</div>
 
   <!-- 3 -->
   <div class="contents">
@@ -974,27 +898,27 @@ playAnim();
         <div class="row text-center" style="display: initial !important;">
             <div class="graph-section">
                 <h2>
-                    "아는 만큼 아낍니다"
+                    세금 환급 전문 회계사는 다릅니다.<br>이미 환급 받으신 분도<br>추가 환급액까지 찾아드립니다
                 </h2>
                 <ul class="wrap">
-                    <li>※4,000만원 이용 시</li>
-                    <li>· 기존 A대부업 연 20%</li>
-                    <li>· 안심대출 연 3.9%~</li>
+                    <li>전년도 5000만원 환급 받은 업체에서</li>
+                    <li>8000만원 환급 받은 사례가 있습니다.</li>
+                    <li>숨은 혜택까지 전부 찾아드립니다</li>
                 </ul>
                 <div class="graph">
                     <div class="left">
                         <div class="wrap">
-                            <p class="price">77만원</p>
+                            <p class="price">5000만원</p>
                             <div class="bar"></div>
-                            <p class="txt"><span>A대부업</span> 월 이자</p>
+                            <p class="txt"><span>이전 세금 환급액</span></p>
                         </div>
                     </div>
                     <div class="middle"></div>
                     <div class="right">
                         <div class="wrap">
-                            <p class="price">13만원</p>
+                            <p class="price txtAni">8000만원</p>
                             <div class="bar"></div>
-                            <p class="txt"><span>안심대출</span> 월 이자</p>
+                            <p class="txt"><span>최근 세금 환급액</span></p>
                         </div>
                     </div>
                 </div>
@@ -1005,84 +929,25 @@ playAnim();
 <script type="text/javascript">
     $(window).scroll(function() { 
         if ($(this).scrollTop() > 800) {
-            $(".graph-section .graph .right .bar").stop().animate({"height":"50"},1000);
+            $(".graph-section .graph .right .bar").stop().animate({"height":"140"},2000);
         } 
     }); 
 </script>
 
 
 
- <!-- 1 -->
-<div class="contents sec01" style="margin-bottom:0px;">
-<div class="container m-center">
-    <div class="row d-flex align-items-center">
-        <div class="col col-md-6 col-12">
-            <h4>사업자 1인 평균 환급액<br>2,200만원 지금 무료로 확인해 보세요!</h4>
-            <h2>
-                최대 환급금 무료 조회
-            </h2>
-            <!-- <p>🔸 3분만에 <b>최대 환급금 조회</b></p>
-            <p>🔸 개인/법인 사업자, 4대 보험 </p>
-            <p>🔸 1원도 남김없이 돌려드립니다!</p>
-            <a href="#fm-box" class="btn btn-main scroll wow fadeInUp">최저 견적 비교하기 ></a> -->
-        </div>
-        <div class="col col-md-6 col-12 p-0">
-            <div class="count">
-                <div class="row pb-2">
-                    <div class="col-4 text-left align-bottom">
-                        <p>한달 환급액</p>
-                    </div>
-                    <div class="col-8 text-right">
-                        <p>
-                            <span class="counter" >721,145,967</span>
-                            원</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="row py-2">
-                    <div class="col-4 text-left">
-                        <p>평균 환급액</p>
-                    </div>
-                    <div class="col-8 text-right">
-                        <p>
-                            <span class="counter" style="color:#2196F3;bottom:0px;">2,200</span>
-
-                            만원</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="row pt-2">
-                    <div class="col-4 text-left">
-                        <p>예상 환급액</p>
-                    </div>
-                    <div class="col-8 text-right">
-                        <p>
-                            <span class="txtAni"  style="color:#2196F3;bottom:0px;">?</span>
-                            원</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col col-12 pb-0">
-            <!-- <p class="text-right small" style="line-height: 1.3em;color: #9b9b9b;">
-                *최저 연 %기준<br>
-                ()
-            </p> -->
-        </div>
-    </div>
-</div>
-</div>
+ 
 
 <section id="call-to-action" class="wow fadeIn">
     <div class="container">
       <div class="row">
         <div class="col-lg-9 text-center text-lg-left wow fadeInUp">
-          <h3 class="cta-title">뼈 노화를 늦추고<br>골감소증에 좋은 음식 5가지</h3>
-          <p class="cta-text">골감수조는 증상이 없지만<br>노후 건강에 치명적입니다. 그래서...</p>
+          <h3 class="cta-title" style="line-height:140%;">혹시나 하는 세무조사 걱정 마세요!<br>세무조사와 상관없이 진행됩니다</h3>
+          <p class="cta-text">국세청은 세금 환급 부분만 분석하기에 걱정하실 필요 없습니다.<br>편하게 무료로 조회하시고 환급받으셔도 괜찮습니다.</p>
          
         </div>
         <div class="col-lg-3 cta-btn-container text-center wow fadeInUp">
-          <a class="cta-btn align-middle motive-btn" href="./column/골감소증-좋은-음식.html">더 알아보기</a>
+          <a class="cta-btn align-middle motive-btn scroll" href="#form_e11">무료 환급금 조회</a>
         </div>
       </div>
 
@@ -1101,99 +966,124 @@ Frequently Asked Questions Section
 
 <ul id="faq-list" class="wow fadeInUp">
 <li>
-  <a data-toggle="collapse" class="collapsed faq1" href="#faq1">어떻게 섭취하는 건가요?<i class="ion-android-remove"></i></a>
+  <a data-toggle="collapse" class="collapsed faq1" href="#faq1">무조건 세금을 환급받을 수 있는 건가요?<i class="ion-android-remove"></i></a>
   <div id="faq1" class="collapse" data-parent="#faq-list">
     <p>
-      액상으로 되어있고 한 포에 70ml가 들어가 있습니다.<br>보통 아침, 저녁 한 포씩 하루 2포를 식후에 드시면 됩니다.</p>
-      <p>액상이다보니 원료로 인한 침전물이 있을 수 있습니다. 그러니 섭취 전에 충분히 흔들어서 섭취하시면 좋습니다.</p>
-      <p>3달 정도 꾸준히 섭취하시면 관절에 도움을 받을 수 있는 성분들의 효과를 충분히 볼 수 있으니 운동처럼 꾸준히 관리한다고 생각하시고 섭취하시는 걸 추천드립니다.</p>
+     A. 무조건은 아닙니다.</p>
+      <p>대표님의 사업 업종과 과거 세금 신고 내역 등에 따라 법인세 환급 여부가 달라집니다.</p>
+      <p>직원도 채용하시고, 사업 초기에 비해 매출과 인원이 증가했다면 조회를 받아보시길 권장드립니다.</p>
      
   </div>
 </li>
 
 <li>
-  <a data-toggle="collapse" href="#faq2" class="collapsed faq2">부작용은 없나요?<i class="ion-android-remove"></i></a>
+  <a data-toggle="collapse" href="#faq2" class="collapsed faq2">어떻게 환급 받나요?<i class="ion-android-remove"></i></a>
   <div id="faq2" class="collapse" data-parent="#faq-list">
     <p>
-      부작용을 최대한 줄인 좋은 원료로 만들었습니다.
+      회계사가 직접 검토 후 경정청구 해드립니다.
     </p>
     <p>
-      하지만, 하루 할당량 이상을 섭취하시는 경우나 복통, 매스꺼움, 소화 불량 등의 가능성이 있습니다. 그런 경우에는 꼭 전문의와 상담 후에 섭취를 진행하는 것을 추천드립니다.
+      전문가와 상담 후 세금 납부 이력 등 꼼꼼한 확인이 필요합니다.<br>여태까지 납부하신 법인세 내역을 살펴본 후, 고객님의 법인이 국가에서 정한 환급대상인지 검토한 뒤 세금을 돌려받을 수 있도록 경정청구를 도와드립니다. 경정 청구가 끝나면 관할 세무서에서 환급금을 입급해드립니다.
     </p>
     
   </div>
 </li>
 
 <li>
-  <a data-toggle="collapse" href="#faq3" class="collapsed faq3">가격이 어떻게 되나요?<i class="ion-android-remove"></i></a>
+  <a data-toggle="collapse" href="#faq3" class="collapsed faq3">세무대리인 변경 없이 환급청구 가능한가요?<i class="ion-android-remove"></i></a>
   <div id="faq3" class="collapse" data-parent="#faq-list">
     <p>
-      호관원은 전화 통화를 통해 여러분에 상황과 조건에 맞춰서 건강에 충분히 도움이 되실 수 있도록 알려드리고 구매를 진행하고 있습니다. 그래서 일반적인 제품과는 달리 정확하게 나오지 않습니다. 
+      세무 대리인 변경 없이 환급청구가 가능합니다!
     </p>
     <p>
-      그래도 간략하게 설명드리면, 1개월 ~ 4개월 기준으로 판매가 되며, 대략 1개월에 35만원 수준입니다. (시기에 따라 가격의 변동은 있을 수 있습니다.)
+      세금 환급은 기존 세무대리인 유뮤와 상관 없이 받을 수 있습니다.
     </p>
     <p>
-      대신 다양한 이벤트와 특별 할인 적용이 가능하도록 신청을 안내해드리고 있어 전화 예약을 하시면 훨씬 할인 된 금액으로 구매를 진행하실 수 있습니다.  
+      사업자의 세금 환급은 전문 회계사가 진행하는게 정확하고 안전합니다.<br>세법에 따라 기업에 맞는 세제 혜택을 찾고 적용해야 정확하고 안전하게 환급받을 수 있습니다.
     </p>
   </div>
 </li>
 
 <li>
-  <a data-toggle="collapse" href="#faq4" class="collapsed faq4">환불은 어떻게 되나요?<i class="ion-android-remove"></i></a>
+  <a data-toggle="collapse" href="#faq4" class="collapsed faq4">세금 환급 받으면 세무조사 받지 않을까요?<i class="ion-android-remove"></i></a>
   <div id="faq4" class="collapse" data-parent="#faq-list">
     <p>
-      구매 후 가장 중요한 것이 구매자 분들이 효과가 있는 것입니다.
-      그래서 보통 15일 정도 동안 드셔보시고 효과를 체험하실 수 있는 기간을 제공해드립니다.
+      세금을 환급 받는다고  세무조사를 받지 않습니다.
     </p>
     <p>
-      그래도 효과가 없다면 15일 간 드신 부분을 제외한 모든 제품을 환불처리 하실 수 있도록 안내드리고 있습니다.
+    국세청은 세금 환급 관련 항목에 대해서만 검토할 수 있기 때문에 세무조사 대상 여부를 판단할 수 없습니다.<br>세금 환급 전문 회계사가 정확하게 진단하고, 진행하는 것이기에 안전합니다.
     </p>
    
   </div>
 </li>
 
-<li>
-  <a data-toggle="collapse" href="#faq5" class="collapsed faq5">어떤 사람들에게 좋나요?<i class="ion-android-remove"></i></a>
-  <div id="faq5" class="collapse" data-parent="#faq-list">
-
-    <p>
-      관절 관리에 도움이 필요하신 분들에게 좋습니다.
-    </p>
-    <p>
-      1. 관절 사용이 잦으신 분들<br>
-      2. 골다공증으로 걱정되시는 분들<br>
-      3. 계단 오르기나 등산이 어려워지고 불편해지신 분들<br>
-      4. 집안일로 손목 관절에 불편함을 느끼시는 분들<br>
-      5. 관절 뻣뻣함이 걱정되시는 분들<br>
-      6. 뼈가 약해지기 쉬운 출산 후 여성분들<br>
-      7. 갱년기 이후 급격하게 골밀도가 낮아지시는 분들<br>
-      8. 칼슘 흡수율이 낮은 노년층분들<br>
-      9. 노후 관절 건강 대비하려는 분들<br>
-    </p>
-    
-  </div>
-</li>
-
-<li>
-  <a data-toggle="collapse" href="#faq6" class="collapsed faq6">할인 신청은 어떻게 하나요?<i class="ion-android-remove"></i></a>
-  <div id="faq6" class="collapse" data-parent="#faq-list">
-    <p>
-      본사의 가격 혜택을 많이 받고 구매를 하시는게 가장 좋습니다.
-    </p>
-      <p>
-      모방하거나 및 잘못된 유통사를 통해서 허위 판매가 기승을 부려 공식 페이지를 통해 신청할시, 특별 혜택 할인을 받을 수 있도록 안내드리고 있습니다. 그래서 아래 버튼을 클릭하시고 신청을 하시면 공식 본사 상담원을 통해 특별 할인 혜택을 제공드립니다.
-    </p>
-   
-  </div>
-</li>
-
-  
 
 </ul>
 
 </div>
 </section><!-- #faq -->
+
+<!-- 1 -->
+<div class="contents sec01" style="margin-bottom:0px;border-bottom:0px;">
+    <div class="container m-center">
+        <div class="row d-flex align-items-center">
+            <div class="col col-md-6 col-12">
+                <h4>환급 받지 않으면 결국 사라집니다.<br>지금이 바로 돈을 찾아 올 기회입니다</h4>
+                <br><h2>
+                    여러분의 예상 세금 환급금은?
+                </h2>
+                <!-- <p>🔸 3분만에 <b>최대 환급금 조회</b></p>
+                <p>🔸 개인/법인 사업자, 4대 보험 </p>
+                <p>🔸 1원도 남김없이 돌려드립니다!</p>
+                <a href="#fm-box" class="btn btn-main scroll wow fadeInUp">최저 견적 비교하기 ></a> -->
+            </div>
+            <div class="col col-md-6 col-12 p-0">
+                <div class="count">
+                    <div class="row pb-2">
+                        <div class="col-4 text-left align-bottom">
+                            <p>한달 지급 환급액</p>
+                        </div>
+                        <div class="col-8 text-right">
+                            <p>
+                                <span class="counter" >721,145,967</span>
+                                원</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row py-2">
+                        <div class="col-4 text-left">
+                            <p>평균 환급액</p>
+                        </div>
+                        <div class="col-8 text-right">
+                            <p>
+                                <span class="counter" style="color:#2196F3;bottom:0px;">2,200</span>
+    
+                                만원</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row pt-2">
+                        <div class="col-4 text-left">
+                            <p>여러분의 환급액은?</p>
+                        </div>
+                        <div class="col-8 text-right">
+                            <p>
+                                <span class="txtAni"  style="color:#2196F3;bottom:0px;">?</span>
+                                원</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-12 pb-0">
+                <!-- <p class="text-right small" style="line-height: 1.3em;color: #9b9b9b;">
+                    *최저 연 %기준<br>
+                    ()
+                </p> -->
+            </div>
+        </div>
+    </div>
+    </div>
+
 
 <div id="test_body"></div>
         <!--footer 시작-->
@@ -1342,20 +1232,20 @@ Frequently Asked Questions Section
             </div><!-- // title -->
             <div class="input_wrap">
                 <form id="form_e12" name="frm_phonecall_web" action="" method="post" target="hidden_iframe12" onsubmit="dll2(); submitted2=true;">
-                    <input type="hidden" name="entry.1451986335"  value="pc 신청">
+                    <input type="hidden" name="entry.2134963309"  value="pc 플로팅 메뉴 신청">
 
 
                     <ul class="clfix">
                         <li>
                             <span>성명</span>
-                            <input type="text" id="pc_name" name="entry.1082783406" >
+                            <input type="text" id="pc_name" name="entry.2085569052" >
                         </li>
                         <li>
                             <span>연락처</span>
-                            <input type="text"  id="pc_phone" name="entry.1019850524" maxlength="11">
+                            <input type="text"  id="pc_phone" name="entry.599870854" maxlength="11">
                         </li>
                         <li>
-            <select name="entry.708727877" id="pc_select" class="select2">
+            <select name="entry.502957077" id="pc_select" class="select2">
                                     <option selected disabled>사업자 유형</option>
                                     <option value="개인 사업자">개인 사업자</option>
                                                                     <option value="5인 미만 법인">5인 미만 법인</option>
@@ -1395,18 +1285,18 @@ Frequently Asked Questions Section
         <div class="bottom_con">
             <div class="inner">
                 <form name="frm_phonecall_mob" id="form_e13" method="post" target="hidden_iframe13" onsubmit="dll3(); submitted3=true;">
-                  <input type="hidden" name="entry.1451986335"  value="mobile 신청">
+                  <input type="hidden" name="entry.2134963309"  value="mobile 신청">
                     <ul class="in_wrap clfix">
                         <li>
                             <span>성명</span>
-                            <input type="text" class="r_input" name="entry.1082783406"  id="mob_name">
+                            <input type="text" class="r_input" name="entry.2085569052"  id="mob_name">
                         </li>
                         <li>
                             <span>연락처</span>
-                            <input type="text" class="r_input wr_tel" name="entry.1019850524" maxlength="11" id="mob_phone">
+                            <input type="text" class="r_input wr_tel" name="entry.599870854" maxlength="11" id="mob_phone">
                         </li>
                         <li>
-            <select name="entry.708727877" id="mob_select" class="select3">
+            <select name="entry.502957077" id="mob_select" class="select3">
                                                 <option selected disabled>사업자 유형</option>
                                                 <option value="개인 사업자">개인 사업자</option>
                                                 <option value="5인 미만 법인">5인 미만 법인</option>
