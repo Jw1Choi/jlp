@@ -71,7 +71,7 @@ input:focus-visible {
     outline: none;
   }
 
-  .click_img {animation: finger 1s infinite; animation-timing-function:linear;}
+  .click_img {animation: finger 1s infinite; animation-timing-function:linear;width:40px;}
 
 /* ==== tab ==== */
 @media screen and (max-width:1024px){
