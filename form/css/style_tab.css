@@ -4,7 +4,8 @@
 .bottom_contact.on {position:absolute;}
 .bottom_contact .title {float:left; width:30%; position:relative;}
 .bottom_contact .title::before {content:''; width:1px; height:30px; background:#777; position:absolute; right:0; top:23px;}
-.bottom_contact .title img {position:absolute; left:0; top:28px; animation: bell 0.7s infinite; animation-timing-function:linear;}
+.bottom_contact .title img {position:absolute; left:0; top:28px; width:40px; animation: finger 1s infinite; animation-timing-function:linear;}
+
 .bottom_contact .title span.tit {color: #b69d81; font-size: 20px; font-weight: bold; line-height: 85px; padding-left: 50px;}
 .bottom_contact .title span.tel {font-size: 24px; vertical-align: middle; font-weight: 600; line-height:85px; margin-left: 20px;}
 .bottom_contact .title span.tel a {color: #fff;}
@@ -69,6 +70,8 @@ input:focus-visible {
     border-radius: 3px;
     outline: none;
   }
+
+  .click_img {animation: finger 1s infinite; animation-timing-function:linear;}
 
 /* ==== tab ==== */
 @media screen and (max-width:1024px){
