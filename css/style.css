@@ -22,7 +22,7 @@ h6 {
     padding: 0;
     margin: 10px 0 10px 0;
     font-weight: 800;
-    line-height: 1.2em;
+    line-height: 140%;
 }
 
 h1 {
@@ -206,14 +206,7 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
 .contents-b0 {
     padding : 60px 0 0;
 }
-.contents h2 {
-    font-size: 2.4em;
-    line-height: 1.3em;
-    margin-bottom: 30px;
-}
-.contents h2 span {
-    font-weight: 400;
-}
+
 .text-default {
     color: #0D47A1;
 }
@@ -245,7 +238,31 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
     margin-bottom: 0;
     font-size: 1em;
     font-weight: 800;
-    color: #9b9b9b;
+    color: #564f4f;
+}
+
+
+@media screen and (max-width:1180px) {
+    
+    .sec01 .count p {
+        margin-bottom: 0;
+        font-size: 1.4em;
+        font-weight: 800;
+        line-height:260%;
+        color: #564f4f;
+    }
+    
+}
+
+@media screen and (max-width:430px) {
+    
+    .sec01 .count p {
+        margin-bottom: 0;
+        font-size: 1.2em;
+        font-weight: 800;
+        color: #564f4f;
+    }
+    
 }
 
 .sec01 .count span {
@@ -1270,7 +1287,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .section3 .content .left h2 {font-size:2.5rem; font-weight: 700; color:#4d4d4d;}
 .section3 .content .left h3 {font-size:1.625rem; line-height: 2.375rem; color:#4d4d4d; padding:1.875rem 0; box-sizing: border-box;}
 .section3 .content .left img {width:100%;}
-.section3 .content .left h4 {background-color: #dddcd7; border-radius: 1.25rem; padding:3.75rem 0; box-sizing: border-box;}
+.section3 .content .left h4 {background-color: #dddcd7; border-radius: 1.25rem; padding:1.25rem 0; box-sizing: border-box;}
 .section3 .content .left h4 span {text-align:Center; color:#3e3b07; font-weight: 700; font-size:2rem; padding:0 0 1.25rem; box-sizing: border-box;}
 .section3 .content .left h4 span:last-child {padding:4.188rem 0 0; box-sizing: border-box; position:relative;}
 .section3 .content .left h4 span:last-child::before {display: block; content: ''; width:2.5rem; height: 2.5rem; position: absolute; left:50%; top:0; transform:translate(-50%,0); background-image: url(../img/icon_plus.png); background-size: cover; background-repeat: no-repeat;}

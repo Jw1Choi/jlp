@@ -344,6 +344,8 @@ div[class^="swiper-button"]::after {
     font-size: 2rem;
     font-weight: 700;
 }
+
+
 .main .recommend .swiper_wrap .swiper-slide {
     height: 48rem;
 }
@@ -732,6 +734,7 @@ div[class^="swiper-button"]::after {
     }
 }
 
+
 /* media*/
 @media (max-width: 1180px) {
     .main .visual .title h2 {
@@ -765,6 +768,8 @@ div[class^="swiper-button"]::after {
     }
     .main .recommend .title h3 {
         margin-right: 4.4rem;
+        font-size:2.5em;
+        font-weight:900;
     }
     .main .recommend .title h3 br {
         display: none;
@@ -823,6 +828,14 @@ div[class^="swiper-button"]::after {
     .main .news .swiper-arrow,
     .main .recommend .swiper-arrow {
         bottom: 15rem;
+    }
+}
+
+@media (max-width: 860px) {
+    .main .recommend .title h3 {
+        margin-right:0px;
+        font-size:2.4em;
+        font-weight:900;
     }
 }
 
@@ -893,8 +906,8 @@ div[class^="swiper-button"]::after {
         width: 100%;
     }
     .main .recommend .title h3 {
-        line-height: 4rem;
-        font-size: 3rem;
+        line-height: 140%;
+        font-size: 2.6rem;
     }
     .main .recommend .title h3 br {
         display: block;

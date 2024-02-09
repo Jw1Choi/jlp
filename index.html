@@ -142,9 +142,19 @@
         
         <!-- 3 -->
         <style>
-            @media screen and (min-width: 768px) {
+
                 .intro-text{
-                    font-size:2.7em;
+                    font-size:3em;
+                }
+             @media screen and (max-width: 1200px) {
+                .intro-text{
+                    font-size:3em;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .intro-text{
+                    font-size:4em;
                 }
             }
         </style>
@@ -157,11 +167,14 @@
             
        
             <style>
+                .three-text{
+                    font-size:1.5em;
+                }
  @media screen and (max-width: 1180px) {
                     .two-title{
-                        font-size:3em !important;
+                        font-size:2.7em !important;
                     }
-                    .two-text{
+                    .two-text, .three-text{
                         font-size:2em;
                     }
 
@@ -175,8 +188,8 @@
                     .two-title{
                         font-size:3em !important;
                     }
-                    .two-text{
-                        font-size:2.3em !important;
+                    .two-text, .three-text{
+                        font-size:2em;
                     }
                     .list-text li{
                         padding-left:10px;
@@ -225,12 +238,13 @@
         </div>
 
                <!-- 7 -->
-               <div class="contents bg-light" >
+               <div class="contents bg-light">
                 <div class="container">
                     <div class="row d-flex align-items-center align-responsive">
                         <div class="col col-md-6 col-12 m-center">
-                            <h2 class="wow fadeInUp">세금을 더 내는 원인과<br>꼭 환급 조회가 필요한 이유?</h2>
-                            <p class="two-text" style="line-height:140%;margin-bottom:30px;">아래 사항으로 1년에 사업자 1곳 마다<br>평균 794만원의 세금을 더 납부하고 있습니다.<br>5년 뒤 국고로 귀속되기 전 환급이 꼭 필요합니다.</p>
+                            <h2 class="wow fadeInUp" id="title_txt" >세금을 더 내는 원인과<br>꼭 환급 조회가 필요한 이유?<br><br>매년 평균
+                                <span class="counter" style="font-weight:bold;">794</span>만원!<br>대표님 통장에 있어야 할 돈이?!</h2>
+                            <p class="three-text" style="line-height:140%;margin-bottom:30px;">매년 사업체마다 평균 794만원이<br>다음의 이유로 더 납부되고 있습니다.<br>5년 뒤 국고로 귀속되기 전<br>꼭 받아야 할 여러분의 돈입니다</p>
                             
                         </div>
                         <div class="col col-md-6 col-12 mx-auto">  
@@ -243,7 +257,7 @@
                               
                                 <li class="wow fadeInLeft" data-wow-delay="0.4s">
                                     <img src="./main1/img/icon7.png" alt="" class="mr-2">
-                                    세제 혜택을 제대로 챙기지 못했을 시
+                                    세제 혜택을 제대로 못 챙길 때
                                 </li>
                                 <li class="wow fadeInLeft" data-wow-delay="0.6s">
                                     <img src="./main1/img/icon8.png" alt="" class="mr-2">
@@ -252,7 +266,7 @@
 
                                 <li class="wow fadeInLeft" data-wow-delay="0.6s">
                                     <img src="./main1/img/icon9.png" alt="" class="mr-2">
-                                    세무 대리를 맡겨도 모든 적용 어려움
+                                    세무 대리를 맡겨도 모든 적용 불가
                                 </li>
 
                                 <li class="wow fadeInLeft" data-wow-delay="0.6s">
@@ -261,7 +275,7 @@
                                 </li>
                               
                             </ul>
-                            <div class="m-text text-center">
+                            <div class="m-text text-center" style="margin-top:30px;">
                                 <a class="btn btn-darker scroll" href="#form_e11">무료 환급 조회</a>
                             </div>
                         </div>
@@ -279,10 +293,10 @@
                 <div class="row d-flex align-items-center">
                     <div class="col col-md-6 col-12">
                         <h2 class="wow fadeInLeft">
-                            더 낸 세금 돌려 받으세요!<br>2명 중 1명이 현재<br><span style="color:#2196F3;font-weight:900;">평균 <span class="counter" style="font-weight:900;bottom:0;color:#2196F3">2,200</span> 만원</span><br>세금 환급 받고 계십니다
+                           더 낸 세금 돌려 받으세요!<br>2명 중 1명이 현재<br><span style="color:#2196F3;font-weight:900;">평균 <span class="counter" style="font-weight:900;bottom:0;color:#2196F3">2,200</span> 만원</span><br>세금 환급 받고 계십니다
                         </h2>
                         <br>
-                        <p style="font-size:20px;line-height:160%;">최신 세법을 토대로 서울대 회계사가<br>몰라서 더 낸 세금 전부 찾아서<br><u style="text-underline-position:under">1원도 빠짐없이 모두 환급해드립니다.</u>
+                        <p style="font-size:20px;line-height:160%;">더 낸 세금 원래 여러분의 돈입니다.<br>최신 세법을 토대로 서울대 회계사가<br>몰라서 더 낸 세금 전부 찾아서<br><u style="text-underline-position:under">1원도 빠짐없이 모두 돌려드립니다.</u>
                         </p><br><br><br>
 
                         <a class="btn btn-darker scroll" href="#form_e11">무료 환급금 조회</a>
@@ -298,7 +312,7 @@
         <script>
             var typeText = document.querySelector(".typeText")
 var textToBeTyped = "사업자 세금 환급금"
-var textToBeTypedArr = ["김** 대표님 212,456,638원 환급 완료", "한** 대표님 31,671,000원 환급 완료", "도소매업 : 362,195,394원 환급", "도소매업 : 362,195,394원 환급"]
+var textToBeTypedArr = ["(주)효* : 141,077,352원 환급 완료",  "(주)바** : 40,827,897원 환급 완료", "***대표님 : 34,942,081원 환급 완료","(주)다** 81,273,696원 환급 완료","**한의원 : 19,466,509원 환급 완료", "**식당 : 14,396,594원 환급 완료"]
 var index = 0, isAdding = true, textToBeTypedIndex = 0
 
 function playAnim() {
@@ -345,15 +359,15 @@ playAnim();
  <!--section3-->
  <article class="section3">
     <div class="wrap1">
-      <h2 class="main_title center up-on-scroll">실제 세금 환급 사례<span class="blue"></span></h2>
+      <h2 class="main_title center up-on-scroll">대표님 통장으로 다시 입금된<br>실제 세금 환급 사례<span class="blue"></span></h2>
 
       <div class="content">
         <div class="left">
           <h2 class="gmarket">주식회사 구**</h2>
           <h3>법인사업자 / 도소매업 / 직원 평균 64명<br>
             </h3>
-          <div class="bottom_wrap" style="text-align: -webkit-center;">
-            <!-- <img src="./hoogi/img/boy.png"> -->
+          <div class="bottom_wrap" style="text-align: -webkit-center;display:block">
+            <!-- <img src="./img/com1.png"> -->
             <h4 style="line-height:240%;">
               <span>세금 환급금 총합</span><br>
               <span class="counter txtAni" style="color:red;">326,398,042</span><span>원</span>
@@ -521,8 +535,10 @@ playAnim();
         <div class="entry-content">
         <section class="recommend" style="background: #fff;">
             <div class="inner">
-                <div class="title" data-aos="fade-up">
-                    <h3>지금 이 순간에도 많은 사업체들이<br>최대 환급금을 받아가고 계십니다</h3>
+                <div class="title">
+                    <h3 style="text-align:left;margin-left:3%;">대표님의 원래 돈을 1원까지</h3>
+                    <h3 style="text-align:left;margin-left:3%;">싹싹 긁어 돌려드리고 있습니다</h3>
+                    
                 </div>
     
                 <div class="swiper_wrap" data-aos="fade-up" data-aos-delay="200">
@@ -665,7 +681,7 @@ playAnim();
                                         <em >
                                             더 낸 세금                                    </em>
                                         <strong>
-                                            19,46,509원                                   </strong>
+                                            19,466,509원                                   </strong>
                                         <p>
                                             환급                                    </p>
                                     </div>
@@ -770,13 +786,58 @@ playAnim();
     
 
 
-            
+
+
+
+
+ <!--section3-->
+ <article class="section3">
+    <div class="wrap1">
+      <h2 class="main_title center up-on-scroll" style="color:#000;">실제 돈을 돌려받은<br>대표님들의 후기<span class="blue"></span></h2>
+
+      <div class="content">
+      <img src="./img/hh1.png" style="width:100" class="wow fadeInLeft" data-wow-delay="0.2s">
+      </div>
+      <div class="content content2">
+       <img src="./img/hh2.png" style="width:100" class="wow fadeInRight" data-wow-delay="0.4s">
+      </div>
+      <div class="content content2">
+        <img src="./img/hh3.png" style="width:100" class="wow fadeInLeft" data-wow-delay="0.6s">
+       </div>
+       <div class="content content2">
+        <img src="./img/hh4.png" style="width:100" class="wow fadeInRight" data-wow-delay="0.8s">
+       </div>
+   
+    </div>
+  </article>
+
+
+
+
+
+
+
+
+            <style>
+                .sec04 h2{
+                    font-size:34px;
+                }
+
+                @media screen and (max-width: 500px) {
+                    .sec04 h2{
+                    font-size:2.6rem;
+                }
+                    
+                }
+            </style>
+
 
             <section class="sec04">
                 <div class="w1600">
                     <div class="flex-box">
                         <div class="title_text">
-                            <h2 data-aos="fade-right" data-aos-anchor=".sec04" data-aos-delay="200"><span style="letter-spacing: -0.02em;">안심하세요!</span> <br>진평회계법인은 신뢰를 통해<br>많은 업체와 함께하고 있습니다</h2>
+                            <h2 data-aos="fade-right" data-aos-anchor=".sec04" data-aos-delay="200" class="">
+                                안심하세요!<br>진평회계법인은 신뢰를 통해<br>많은 업체와 함께하고 있습니다</h2>
                         </div>
                         <div class="logo-rolling" data-aos="fade-in"  data-aos-anchor=".sec04" data-aos-delay="200">
                             <div class="logo-wrap right">
@@ -859,20 +920,20 @@ playAnim();
  <div class="contents bg-darker">
     <div class="container">
         <div class="row d-flex align-items-center align-responsive">
-            <div class="col col-md-6 col-12 m-center text-white">
+            <div class="col col-md-4 col-12 m-center text-white">
                 <h2 class="wow fadeInUp two-title">진평 회계 법인은 약속드립니다</h2>
-                <h3 class="two-text">여러분이 더 낸 세금을 전부 찾아 드리겠습니다</h3><br>
+                <h3 class="two-text">여러분이 더 낸 세금을<br>전부 찾아 돌려드립니다</h3><br>
                 
             </div>
-            <div class="col col-md-6 col-12 mx-auto">  
+            <div class="col col-md-8 col-12 mx-auto">  
                 <ul class="list-item list-text">
                     <li class="wow fadeInLeft">
                   <img src="./main1/img/icon1.png" alt="" class="mr-2">
-                        최신 세법 조항을 전부 찾아 1원까지 찾아드립니다
+                        최신 세법 조항을 끝까지 찾아 1원까지!
                     </li>
                     <li class="wow fadeInLeft" data-wow-delay="0.2s">
                         <img src="./main1/img/icon1.png" alt="" class="mr-2">
-                        까다로운 법률로 꺼려하는 세제 혜택까지 받아드립니다
+                        까다로운 법률로 꺼려하는 세제 혜택까지 전부!
                     </li>
                  
                     <li class="wow fadeInLeft" data-wow-delay="0.5s">
@@ -898,12 +959,12 @@ playAnim();
         <div class="row text-center" style="display: initial !important;">
             <div class="graph-section">
                 <h2>
-                    세금 환급 전문 회계사는 다릅니다.<br>이미 환급 받으신 분도<br>추가 환급액까지 찾아드립니다
+                    이미 환급 받으셨다고요??<br>서울대 경영학과 출신 15년 경력<br>세금 환급 전문 회계사는 다릅니다.<br>추가 환급액까지 말끔하게 찾아드립니다
                 </h2>
                 <ul class="wrap">
                     <li>전년도 5000만원 환급 받은 업체에서</li>
                     <li>8000만원 환급 받은 사례가 있습니다.</li>
-                    <li>숨은 혜택까지 전부 찾아드립니다</li>
+                    <li>타사와는 비교가 불가능한 압도적인 노하우로<br>숨겨진 1원까지 송두리째 찾아드립니다</li>
                 </ul>
                 <div class="graph">
                     <div class="left">
@@ -935,7 +996,34 @@ playAnim();
 </script>
 
 
+<style>
+    .cta-text{
+        font-size: 20px;
+        line-height:140%;
+        margin:20px 0;
+    }
 
+    @media screen and (max-width: 1180px) {
+        .cta-text{
+        font-size: 2em;
+        margin:20px 0;
+    }
+                    
+                }
+
+                @media screen and (max-width: 500px) {
+
+        #call-to-action .cta-title{
+        font-size: 2.4em;
+        /* margin:20px 0; */
+    }
+        .cta-text{
+        font-size: 1.8em;
+        /* margin:20px 0; */
+    }
+                    
+                }
+</style>
  
 
 <section id="call-to-action" class="wow fadeIn">
@@ -943,7 +1031,7 @@ playAnim();
       <div class="row">
         <div class="col-lg-9 text-center text-lg-left wow fadeInUp">
           <h3 class="cta-title" style="line-height:140%;">혹시나 하는 세무조사 걱정 마세요!<br>세무조사와 상관없이 진행됩니다</h3>
-          <p class="cta-text">국세청은 세금 환급 부분만 분석하기에 걱정하실 필요 없습니다.<br>편하게 무료로 조회하시고 환급받으셔도 괜찮습니다.</p>
+          <p class="cta-text">국세청은 세금 환급 부분만 분석하기에<br>편하게 무료로 조회하시고 환급받으시면 됩니다.</p>
          
         </div>
         <div class="col-lg-3 cta-btn-container text-center wow fadeInUp">
@@ -953,6 +1041,7 @@ playAnim();
 
     </div>
   </section>
+
 
 <!--==========================
 Frequently Asked Questions Section
@@ -1023,25 +1112,39 @@ Frequently Asked Questions Section
 </div>
 </section><!-- #faq -->
 
+
+<section id="call-to-action" class="wow fadeIn">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 text-center text-lg-left wow fadeInUp">
+          <h3 class="cta-title" style="line-height:140%;">세무 대리인 변경 없어도<br>편하게 환급 가능합니다</h3>
+          <p class="cta-text">그러니 전혀 부담갖지 마시고<br>5년간 더 낸 여러분의 돈을<br>3분 조회로 지금 당장 찾아가세요.</p>
+         
+        </div>
+        <div class="col-lg-3 cta-btn-container text-center wow fadeInUp">
+          <a class="cta-btn align-middle motive-btn scroll" href="#form_e11">무료 환급금 조회</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 <!-- 1 -->
 <div class="contents sec01" style="margin-bottom:0px;border-bottom:0px;">
     <div class="container m-center">
         <div class="row d-flex align-items-center">
             <div class="col col-md-6 col-12">
-                <h4>환급 받지 않으면 결국 사라집니다.<br>지금이 바로 돈을 찾아 올 기회입니다</h4>
+                <h4>안받으면 사라지는 여러분의 돈!<br>15년 내공의 세금 환급 노하우로<br>숨어있던 단 1원까지 받을 기회는<br>지금 이 순간 밖에 없습니다.</h4>
                 <br><h2>
                     여러분의 예상 세금 환급금은?
                 </h2>
-                <!-- <p>🔸 3분만에 <b>최대 환급금 조회</b></p>
-                <p>🔸 개인/법인 사업자, 4대 보험 </p>
-                <p>🔸 1원도 남김없이 돌려드립니다!</p>
-                <a href="#fm-box" class="btn btn-main scroll wow fadeInUp">최저 견적 비교하기 ></a> -->
+             
             </div>
             <div class="col col-md-6 col-12 p-0">
                 <div class="count">
                     <div class="row pb-2">
                         <div class="col-4 text-left align-bottom">
-                            <p>한달 지급 환급액</p>
+                            <p>한달 평균 환급액</p>
                         </div>
                         <div class="col-8 text-right">
                             <p>

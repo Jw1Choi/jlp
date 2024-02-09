@@ -299,6 +299,12 @@ input[type="checkbox"]:checked + label span {
     margin-bottom: 30px;
 }
 
+.contents h2 #title_text{
+    font-size: 2em !important;
+}
+
+
+
 .contents h2 span {
     font-weight: 400;
 }
@@ -389,7 +395,7 @@ input[type="checkbox"]:checked + label span {
     margin: 5px 0;
     box-shadow: 1px 5px 10px rgba(0,0,0,0.1);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: left;
     padding: 0 30px;
 }
@@ -398,7 +404,26 @@ input[type="checkbox"]:checked + label span {
     
 
     .list-item li {
-        font-size: 1.6rem;
+        font-size: 2rem !important;
+    }
+    
+}
+
+
+@media screen and (max-width:1100px) {
+    
+
+    .list-item li {
+        font-size: 1.8rem !important;
+    }
+    
+}
+
+@media screen and (max-width:900px) {
+    
+
+    .list-item li {
+        font-size: 1.8rem !important;
     }
     
 }
@@ -652,7 +677,7 @@ footer p {
         text-align: center !important;
     }
     .contents h2 {
-        font-size: 3em !important;
+        font-size: 2.6em !important;
     }
 }
 @media screen and (max-width: 485px) {
@@ -674,7 +699,7 @@ footer p {
     .list-item li {
         height: 45px;
         line-height: 45px;
-        font-size: .9em;
+        font-size: 1.7em;
         letter-spacing: -1px;
         padding: 0 8px;
         overflow: hidden;
