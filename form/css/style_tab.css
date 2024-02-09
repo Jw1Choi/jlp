@@ -513,7 +513,7 @@ input:focus-visible {
     .contact_wrap .clfix .tab_con .ad_list > li .t_list li:nth-child(2) span {background:#a41a1a;}
     .contact_wrap .clfix .tab_con .ad_list > li .t_list li:last-child span {background:#1aa42a;}
     
-    .select3 {width: 100%; font-size: 13px; color:#fff; background:#a38a6d; border: none; margin-left: -16px;font-weight:bold;}
+    .select3 {width: 100%; font-size: 13px; color:#fff; background:#a38a6d; border: none; margin-left: 0px;font-weight:bold;}
     
     
     
