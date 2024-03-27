@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- meta data -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-title" content="진평회계법인 세액 공제 환급 서비스" />
+  <meta name="author"      content="진평회계법인 세액 공제 환급 서비스" />
+  <meta name="keywords"    content="진평회계법인 세액 공제 환급 서비스" />
+  <meta name="description" content="진평회계법인 세액 공제 환급 서비스" />
+  <!-- <meta property="og:image" content="images/.jpg"/> -->
+  <meta name="robots" content="all" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
+  
+  <title>진평회계법인 세액 공제 환급 서비스</title>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="./index/img/favicon/favicon.png">
+
+<!-- css -->
+<link rel="stylesheet" href="./index/css/pretendard.css">
+<link rel="stylesheet" href="./index/css/reset.css">
+<link rel="stylesheet" href="./index/css/style.css">
+<link rel="stylesheet" href="./index/js/jquery-ui-1.12.1.min.css">
+
+<!-- js -->
+<script src="./index/js/jquery-1.12.1.min.js"></script>
+<script src="./index/js/jquery-ui-1.12.1.min.js"></script>
+<script src="./index/js/common.js"></script>	
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <nav class="nav">
+                <h1 class="logo-area">
+                    <a href="./introduce.html" class="logo-area" >
+                        <img src="./index/img/jp.png" style="max-width:200px;">
+                    </a>
+                </h1>
+                <button class="hamburger-menu" aria-label="메뉴 열기">
+                    <img class="hamburger-icon" src="./index/img/ico_header_menu_2x.png" >
+                </button>
+                <nav class="gnb" role="navigation">
+                    <ul class="gnb-area">
+                        <li class="gnb-menu menu1 "><a href="./introduce.html">고용증대세액공제?</a></li>
+                        <li class="gnb-menu menu2 on"><a href="./checklist.html">공제대상 체크 및 신청</a></li>
+                        <li class="gnb-menu menu3"><a href="./video.html">2억 환급금 후기</a></li>
+                        <li class="gnb-menu menu4"><a href="./know-how.html">최대 환급액 받는 법</a></li>
+                        <li class="gnb-menu menu5"><a href="./faq.html">자주 묻는 질문</a></li>
+                    </ul>
+                    <div class="line" aria-hidden="true"></div>
+                </nav>
+            
+                <div class="background-layer"></div>
+            </nav>
+        </header>
+
+        <!-- main start -->
+        <main id="main" class="main-area">
+            <div class="main-container">
+                <div class="sub-top">
+                    <h2 class="title">고용증대세액공제<br>혜택 대상 체크 리스트</h2>
+                    <p class="desc">
+                        <span class="">간단한 점검 사항을 통해</span>
+                        <span class="">혜택 신청자인지 확인해보세요!</span><br>
+                        <span class=""><em>모두 해당하는 경우에만</em></span>
+                        <span class=""><em>신청·조회가 가능합니다.</em></span>
+                    </p>
+                </div>
+    
+                <!-- contents -->
+                <div class="sub-contents">
+                    <div class="checklist-container">
+                        <!-- checklist start-->
+                        <div class="checklist">
+                            <ul>
+                                <li class="checklist-item">
+                                    <div class="item-str">1</div>
+                                    <div class="item-question">
+                                        <p class="title"><span>(개인 혹은 법인) 사업체를 운영하고 있나요?</p>
+                                        <p class="desc">고용증대세액공제는 <em>사업체 대상 혜택</em>입니다.</p>
+                                    </div>
+                                    <div class="item-answer">
+                                        <input type="radio" id="answer1_yes" name="answer1" value="Y">
+                                        <label for="answer1_yes">예</label>
+                                        <input type="radio" id="answer1_no" name="answer1" value="N">
+                                        <label for="answer1_no">아니오</label>
+                                    </div>
+                                </li>
+                                <li class="checklist-item">
+                                    <div class="item-str">2</div>
+                                    <div class="item-question">
+                                        <p class="title"><span>전년도 대비</span><em> 상시 근로자가 증가한 적이 있습니까?</em></p>
+                                        <p class="desc">상시 근로자란? : 근로 계약 기간이 <em>1년 이상, 대표나 최대주주의 친족 관계가 아닌 근로자</em></p>
+                                    </div>
+                                    <div class="item-answer">
+                                        <input type="radio" id="answer2_yes" name="answer2" value="Y">
+                                        <label for="answer2_yes">예</label>
+                                        <input type="radio" id="answer2_no" name="answer2" value="N">
+                                        <label for="answer2_no">아니오</label>
+                                    </div>
+                                </li>
+                                <li class="checklist-item">
+                                    <div class="item-str">3</div>
+                                    <div class="item-question">
+                                        <p class="title"><span>호텔업, 여관업, 주점업, 단란주점업에 해당되지 않는 업종인가요?</p>
+                                        <p class="desc">호텔, 여관, 주점, 단란주점 등 유흥 목적의 사업체에는 세액 공제가 적용되지 않습니다.</p>
+                                    </div>
+                                    <div class="item-answer">
+                                        <input type="radio" id="answer3_yes" name="answer3" value="Y">
+                                        <label for="answer3_yes">예</label>
+                                        <input type="radio" id="answer3_no" name="answer3" value="N">
+                                        <label for="answer3_no">아니오</label>
+                                    </div>
+                                </li>
+                                <li class="checklist-item">
+                                    <div class="item-str">4</div>
+                                    <div class="item-question">
+                                        <p class="title">상시 근로자의 국민연금, 건강보험을 납부 하셨나요?</p>
+                                        <p class="desc"><em>근로 소득세와 국민연금, 건강 보험의 납부 내역이 없는 근로자</em>는 상시 근로자에 해당하지 않아 혜택 대상에 포함되지 않습니다.</p>
+
+                                    </div>
+                                    <div class="item-answer">
+                                        <input type="radio" id="answer4_yes" name="answer4" value="Y" >
+                                        <label for="answer4_yes">예</label>
+                                        <input type="radio" id="answer4_no" name="answer4" value="N">
+                                        <label for="answer4_no">아니오</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- checklist end -->
+                    </div>
+                    <div class="btn-container">
+						<p class="title">※ 모든 사항에 맞지 않으면 세액 공제 대상자가 아닙니다.</p>
+                        <button id="conButton" class="btn btn-s2" role="button"  disabled><a href="https://maxsave.jptax.kr/TAX_CFR_010000?USERID=maxsave">세액 공제 받기</a></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main end -->
+
+        
+ <!-- footer start -->
+ <footer id="footer" class="footer">
+    <div class="footer-content">
+        <div class="contact-info">
+            <div class="nav-util">
+                <div class="call">
+                    <img src="./index/img/jp.png" style="max-width:200px;margin:30px 0;">
+                </div>
+            </div>
+            <p class="title">진평회계법인</p>
+        </div>
+        <div class="address-info">				
+            Copyright ⓒ All rights reserved. <br><br>서울 영등포구 양산로 91 리드윈센터 1311호 | 사업자등록번호: 438-88-02614<br>
+            대표자 : 김용환 | 이메일 : jpac22@jpac.kr<br>
+    </div>
+</footer>
+ <!-- footer end -->
+    </div>
+   
+</body>
+
+</html>
