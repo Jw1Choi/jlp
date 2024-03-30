@@ -190,9 +190,11 @@ $(document).ready(function(){
 		var answer1Value  = $("input[name='answer1']:checked").val();
 		var answer2Value  = $("input[name='answer2']:checked").val();
 		var answer3Value  = $("input[name='answer3']:checked").val();
-		var answer4Value  = $("input[name='answer4']:checked").val();
+		// var answer4Value  = $("input[name='answer4']:checked").val();
 		
-		if(answer1Value == "Y" && answer2Value == "Y" && answer3Value == "Y" && answer4Value == "Y"){
+		if(answer1Value == "Y" && answer2Value == "Y" && answer3Value == "Y" 
+        //    && answer4Value == "Y"
+           ){
 			$("#conButton").removeAttr("disabled");  // enabled 泥섎━
 		}else{
 			$("#conButton").attr("disabled","disabled");  // disabled 泥섎━
