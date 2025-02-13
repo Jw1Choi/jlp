@@ -1270,7 +1270,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
   }
 
-
+/* 
 .section3 .wrap1 {width:1200px; margin:0 auto;}
 .section3 .main_title {font-size:4.125rem; color:#4e4e4e; font-family: 'GmarketSans'; font-weight:700; line-height: 5rem;}
 .section3 .yellow {color:#f9eda7;}
@@ -1308,7 +1308,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .section3 .content .right .bottom_table th {background-color:#345bd7;}
 .section3 .content .right .bottom_table tbody tr.borderline {border-top:2px solid #345bd7;}
 
-/* �섎떒�ъ옄遺�遺� */
+
 .section3 .content2 {margin-top:2.5rem;}
 .section3 .content2 .left h4 {position: relative;}
 .section3 .content2 .left h4 > img {position: absolute; top:-3%; left:5%; height: 1.25rem!important; width:auto;}
@@ -1376,7 +1376,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .section3 .content .right {margin-top:2rem;}
 
-}
+} */
 
 
 

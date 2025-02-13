@@ -1,169 +1,200 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <!-- meta data -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="format-detection" content="telephone=no">
-  <meta name="apple-mobile-web-app-title" content="진평회계법인 세액 공제 환급 서비스" />
-  <meta name="author"      content="진평회계법인 세액 공제 환급 서비스" />
-  <meta name="keywords"    content="진평회계법인 세액 공제 환급 서비스" />
-  <meta name="description" content="진평회계법인 세액 공제 환급 서비스" />
-  <!-- <meta property="og:image" content="images/.jpg"/> -->
-  <meta name="robots" content="all" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
-  
-  <title>진평회계법인 세액 공제 환급 서비스</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자격 충족 확인</title>
+    <style>
+        #checklist {
+            font-family: 'Arial', sans-serif;
+            /* background: linear-gradient(140deg, #010171, #3412ce); */
+            background: #dfdfdf;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-  <!-- favicon -->
-  <link rel="icon" type="image/png" href="./index/img/favicon/favicon.png">
+        #checklist .container {
+            max-width: 600px;
+            width: 90%;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
 
-<!-- css -->
-<link rel="stylesheet" href="./index/css/pretendard.css">
-<link rel="stylesheet" href="./index/css/reset.css">
-<link rel="stylesheet" href="./index/css/style.css">
-<link rel="stylesheet" href="./index/js/jquery-ui-1.12.1.min.css">
+        #checklist .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6b6bff;
+            margin-bottom: 10px;
+        }
 
-<!-- js -->
-<script src="./index/js/jquery-1.12.1.min.js"></script>
-<script src="./index/js/jquery-ui-1.12.1.min.js"></script>
-<script src="./index/js/common.js"></script>	
+        #checklist  .header p {
+            font-size: 16px;
+            color: #666;
+        }
 
+        #checklist .progress-container {
+            margin: 20px 0;
+            position: relative;
+        }
+
+        #checklist .progress-bar {
+            height: 20px;
+            width: 100%;
+            background: #e4e4e9;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #checklist .progress-bar-fill {
+            height: 100%;
+            width: 0%;
+            background: #6b6bff;
+            transition: width 0.3s ease-in-out;
+        }
+
+        #checklist .checklist {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        #checklist .checklist-item {
+            display: flex;
+            align-items: center;
+            background: #f7f7fb;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+        }
+
+        #checklist .checklist-item:hover {
+            background: #eef0ff;
+            transform: translateY(-3px);
+        }
+
+        #checklist .checklist-item input {
+            margin-right: 15px;
+            transform: scale(1.3);
+            cursor: pointer;
+        }
+
+        #checklist .checklist-item label {
+            font-size: 16px;
+            font-weight: bold;
+            flex: 1;
+            color: #333;
+        }
+
+        #checklist .status {
+            font-size: 18px;
+            font-weight: bold;
+            color: #6b6bff;
+            margin-top: 20px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        @media (max-width: 768px) {
+            #checklist .checklist-item label {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <div id="wrap">
-        <header id="header">
-            <nav class="nav">
-                <h1 class="logo-area">
-                    <a href="./introduce.html" class="logo-area" >
-                        <img src="./index/img/jp.png" style="max-width:200px;">
-                    </a>
-                </h1>
-                <button class="hamburger-menu" aria-label="메뉴 열기">
-                    <img class="hamburger-icon" src="./index/img/ico_header_menu_2x.png" >
-                </button>
-                <nav class="gnb" role="navigation">
-                    <ul class="gnb-area">
-                        <li class="gnb-menu menu1 "><a href="./introduce.html">고용증대세액공제?</a></li>
-                        <li class="gnb-menu menu2 on"><a href="./checklist.html">공제대상 체크 및 신청</a></li>
-                        <li class="gnb-menu menu3"><a href="./video.html">2억 환급금 후기</a></li>
-                        <li class="gnb-menu menu4"><a href="./know-how.html">최대 환급액 받는 법</a></li>
-                        <li class="gnb-menu menu5"><a href="./faq.html">자주 묻는 질문</a></li>
-                    </ul>
-                    <div class="line" aria-hidden="true"></div>
-                </nav>
-            
-                <div class="background-layer"></div>
-            </nav>
-        </header>
-
-        <!-- main start -->
-        <main id="main" class="main-area">
-            <div class="main-container">
-                <div class="sub-top">
-                    <h2 class="title">고용증대세액공제<br>혜택 대상 체크 리스트</h2>
-                    <p class="desc">
-                        <span class="">간단한 점검 사항을 통해</span><br>
-                        <span class="">혜택 신청자인지 확인해보세요!</span><br>
-                        <span class=""><em>모두 해당하는 경우에만</em></span>
-                        <span class=""><em>신청·조회가 가능합니다.</em></span>
-                    </p>
-                </div>
-    
-                <!-- contents -->
-                <div class="sub-contents">
-                    <div class="checklist-container">
-                        <!-- checklist start-->
-                        <div class="checklist">
-                            <ul>
-                                <li class="checklist-item">
-                                    <div class="item-str">1</div>
-                                    <div class="item-question">
-                                        <p class="title"><span>(개인 혹은 법인) 사업체를 운영하고 있나요?</p>
-                                        <p class="desc">고용증대세액공제는 <em>사업체 대상 혜택</em>입니다.</p>
-                                    </div>
-                                    <div class="item-answer">
-                                        <input type="radio" id="answer1_yes" name="answer1" value="Y">
-                                        <label for="answer1_yes">예</label>
-                                        <input type="radio" id="answer1_no" name="answer1" value="N">
-                                        <label for="answer1_no">아니오</label>
-                                    </div>
-                                </li>
-                                <li class="checklist-item">
-                                    <div class="item-str">2</div>
-                                    <div class="item-question">
-                                        <p class="title"><span>5년 이내에</span><em> 채용을 늘린 적 있나요?</em></p>
-                                        <p class="desc">5년 이내에 직원 수가 늘어난 적이 있다면 가능합니다.</em></p>
-                                    </div>
-                                    <div class="item-answer">
-                                        <input type="radio" id="answer2_yes" name="answer2" value="Y">
-                                        <label for="answer2_yes">예</label>
-                                        <input type="radio" id="answer2_no" name="answer2" value="N">
-                                        <label for="answer2_no">아니오</label>
-                                    </div>
-                                </li>
-                                <li class="checklist-item">
-                                    <div class="item-str">3</div>
-                                    <div class="item-question">
-                                        <p class="title"><span>호텔업, 여관업, 주점업, 단란주점업에 해당되지 않는 업종인가요?</p>
-                                        <p class="desc">호텔, 여관, 주점, 단란주점 등 유흥 목적의 사업체에는 세액 공제가 적용되지 않습니다.</p>
-                                    </div>
-                                    <div class="item-answer">
-                                        <input type="radio" id="answer3_yes" name="answer3" value="Y">
-                                        <label for="answer3_yes">예</label>
-                                        <input type="radio" id="answer3_no" name="answer3" value="N">
-                                        <label for="answer3_no">아니오</label>
-                                    </div>
-                                </li>
-                                <!-- <li class="checklist-item">
-                                    <div class="item-str">4</div>
-                                    <div class="item-question">
-                                        <p class="title">세액 공제를 받으신</p>
-                                        <p class="desc"><em>근로 소득세와 국민연금, 건강 보험의 납부 내역이 없는 근로자</em>는 상시 근로자에 해당하지 않아 혜택 대상에 포함되지 않습니다.</p>
-
-                                    </div>
-                                    <div class="item-answer">
-                                        <input type="radio" id="answer4_yes" name="answer4" value="Y" >
-                                        <label for="answer4_yes">예</label>
-                                        <input type="radio" id="answer4_no" name="answer4" value="N">
-                                        <label for="answer4_no">아니오</label>
-                                    </div>
-                                </li> -->
-                            </ul>
-                        </div>
-                        <!-- checklist end -->
-                    </div>
-                    <div class="btn-container">
-						<p class="title" style="font-size:14px;">※ 모든 사항에 맞지 않으면 세액 공제 대상자가 아닙니다.</p>
-                        <button id="conButton" class="btn btn-s2" role="button"  disabled><a href="https://maxsave.jptax.kr/TAX_CFR_010000?USERID=maxsave">세액 공제 받기</a></button>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <!-- main end -->
-
-        
- <!-- footer start -->
- <footer id="footer" class="footer">
-    <div class="footer-content">
-        <div class="contact-info">
-            <div class="nav-util">
-                <div class="call">
-                    <img src="./index/img/jp.png" style="max-width:200px;margin:30px 0;">
-                </div>
-            </div>
-            <p class="title">진평회계법인</p>
+    <section id="checklist">
+    <div class="container">
+        <div class="header">
+            <h1>개인회생 자격 체크리스트</h1>
+            <p>조건에 해당되는지 먼저 확인하세요!</p>
         </div>
-        <div class="address-info">				
-            Copyright ⓒ All rights reserved. <br><br>서울 영등포구 양산로 91 리드윈센터 1311호 | 사업자등록번호: 438-88-02614<br>
-            대표자 : 김용환 | 이메일 : jpac22@jpac.kr<br>
-    </div>
-</footer>
- <!-- footer end -->
-    </div>
-   
-</body>
 
+        <!-- 충족도 표시 -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progress-bar-fill"></div>
+            </div>
+        </div>
+
+        <!-- 체크리스트 -->
+        <div class="checklist">
+            <div class="checklist-item">
+                <input type="checkbox" id="item1">
+                <label for="item1">총 채무가 1천만원 이상, 최대 담보채무 15억, 무담보채무 10억 이하이다.</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="item2">
+                <label for="item2">정규직, 비정규직, 프리랜서 등 현재 소득이 있다.</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="item3">
+                <label for="item3">부채가 재산보다 많다.[빚 > 재산]</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="item4">
+                <label for="item4">면책 받은 적이 없거나 있었다면 받은지 5년이 넘었다.</label>
+            </div>
+        </div>
+
+        <!-- 상태 메시지 -->
+        <div class="status" id="status-text">현재 0개 항목 충족</div>
+    </div>
+    </section>
+
+    <script>
+        const checklist = document.querySelector('#checklist');
+        if (checklist) {
+            const checklistItems = checklist.querySelectorAll('.checklist-item');
+            const checkboxes = checklist.querySelectorAll('input[type="checkbox"]');
+            const progressBarFill = checklist.querySelector('#progress-bar-fill');
+            const statusText = checklist.querySelector('#status-text');
+            const totalItems = checkboxes.length;
+    
+            // 메시지 배열: 체크 개수에 따른 메시지
+            const messages = [
+                "현재 0개 항목 충족",
+                "현재 1개 항목 충족",
+                "현재 2개 항목 충족",
+                "현재 3개 항목 충족",
+                "현재 4개 항목 충족: 개인 회생 조건에 충족됩니다."
+            ];
+    
+            checklistItems.forEach((item, index) => {
+                item.addEventListener('click', () => {
+                    const checkbox = item.querySelector('input[type="checkbox"]');
+    
+                    // 체크 상태 토글
+                    checkbox.checked = !checkbox.checked;
+    
+                    // 체크 상태 업데이트
+                    const checkedCount = checklist.querySelectorAll('input[type="checkbox"]:checked').length;
+                    const percentage = Math.round((checkedCount / totalItems) * 100);
+    
+                    // 충족도 업데이트
+                    progressBarFill.style.width = `${percentage}%`;
+    
+                    // 메시지 업데이트
+                    statusText.textContent = messages[checkedCount];
+    
+                    // 색상 변화
+                    progressBarFill.style.backgroundColor = percentage === 100 ? '#4caf50' : '#6b6bff';
+                    statusText.style.color = percentage === 100 ? '#4caf50' : '#6b6bff';
+                });
+            });
+        }
+    </script>
+    
+    
+</body>
 </html>

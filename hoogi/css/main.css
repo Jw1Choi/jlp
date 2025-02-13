@@ -308,10 +308,10 @@ div[class^="swiper-button"]::after {
 /* only pc */
 @media (min-width: 1181px) {
     div[class^="swiper-button"]:hover {
-        background-color: #222;
+        background-color: rgba(129, 129, 129, 0.5);
     }
     div[class^="swiper-button"]:hover::after {
-        background-image: url("../images/main/ico_slide_arrow_hover.svg");
+        background-image: url("../img/ico_slide_arrow.svg");
     }
 }
 @media (max-width: 767px) {
