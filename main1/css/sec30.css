@@ -1,0 +1,1195 @@
+
+/*************************************************************
+ * 1) reset 효과(ul, li 등)와 기본 요소들 -> #sec30 내부에만 적용
+ *************************************************************/
+ #sec30 ul, 
+#sec30 li {
+  list-style: none;
+}
+#sec30 img {
+  vertical-align: middle;
+  border: none;
+}
+#sec30 a {
+  text-decoration: none;
+  cursor: pointer;
+}
+#sec30 p {}
+#sec30 div,
+#sec30 input,
+#sec30 button {
+  vertical-align: middle;
+  border: none;
+  font-family: 'Pretendard';
+}
+#sec30 textarea {
+  border: none;
+}
+#sec30 .red {
+  color: #ee0000;
+  font-weight: 500;
+}
+
+/*************************************************************
+ * 2) 애니메이션 (global scope이지만, 호출부는 #sec30 내부 클래스로)
+ *************************************************************/
+/* 깜빡이는 효과 */
+#sec30 .blinking {
+  -webkit-animation: blink 1s ease-in-out infinite alternate;
+  -moz-animation: blink 1s ease-in-out infinite alternate;
+  animation: blink 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink {
+  0% {opacity: 0;}
+  100% {opacity: 0;}
+}
+@-moz-keyframes blink {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes blink {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* 흔들리는 효과 */
+@keyframes bell {
+  0% { transform: rotate(-15deg); }
+  50% { transform: rotate(25deg); }
+  75% { transform: rotate(0); }
+  100% { transform: rotate(-15deg); }
+}
+
+/*************************************************************
+ * 3) PC용 기본 레이아웃
+ *************************************************************/
+#sec30 .wrap {
+  width: 100%;
+  /* min-width: 1200px;  PC 기본 최소폭 */
+  /* overflow: hidden; */
+  margin: 0 auto; /* 중앙 정렬 */
+}
+#sec30 .wrap .contents {
+  position: relative;
+  top: 0;
+  left: 0%;
+  /* margin-left: -960px; */
+  /* width: 1920px; */
+  text-align: center;
+}
+
+#sec30 .wrap .inner {
+  width:90%;
+}
+
+
+/*************************************************************
+ * 4) 공통 타이포와 색상 클래스
+ *************************************************************/
+#sec30 h1 {
+  font-size: 78px;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: -4px;
+  text-align: center;
+  color: #fff;
+}
+#sec30 h2 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: -2px;
+  text-align: center;
+  color: #fff;
+}
+#sec30 h3 {
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 120%;
+  color: #fff;
+}
+#sec30 h4 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 180%;
+  text-align: left;
+}
+#sec30 .gold1 { color: #dfbe88; }
+#sec30 .gold2 { color: #916235; }
+#sec30 .orange { color: #ff640e; }
+#sec30 .yellow { color: #fff100; }
+#sec30 .white { color: #fff; }
+#sec30 .black { color: #1b1b1a; }
+
+
+/*************************************************************
+ * 10) main_counter, point
+ *************************************************************/
+#sec30 ul.main_counter {
+  width: 660px;
+  margin: 0 auto;
+}
+#sec30 ul.main_counter li {
+  width: 33.3333%;
+  float: left;
+  padding: 10px;
+  padding-top: 60px;
+}
+#sec30 ul.main_counter li i {
+  font-size: 50px;
+  padding: 20px 10px 10px 10px;
+}
+#sec30 ul.main_counter > li > p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 0 5px;
+  margin-top: 15px;
+}
+#sec30 ul.main_counter li > span {
+  font-size: 62px;
+  margin-top: 40px;
+  display: block;
+}
+
+#sec30 ul.point {
+  width: 690px;
+  margin: 0 auto;
+  clear: both;
+}
+#sec30 ul.point li {
+  width: 33.3333%;
+  float: left;
+  color: #000;
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 60px;
+}
+#sec30 ul.point li img {
+  padding-bottom: 20px;
+}
+#sec30 ul.point li > p:nth-child(2) {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  letter-spacing: -1px;
+}
+#sec30 ul.point li > p:nth-child(3) {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+/*************************************************************
+ * 11) 폼 관련
+ *************************************************************/
+#sec30 .section5 {
+  background: #f7f7f7;
+  text-align: -webkit-center;
+}
+#sec30 .section5 article {
+  text-align: -webkit-center;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 15px;
+}
+#sec30 .section5 article > div {
+  width: 100%;
+  max-width:600px;
+  height:850px;
+  box-sizing: border-box;
+  padding: 50px 50px;
+}
+#sec30 .section5 article .selfBox {
+  background-color: #1d150d;
+  position: relative;
+}
+#sec30 .section5 article .selfBox h3 {
+  color: #fff;
+  border-bottom-color: #fff;
+  margin-top:50px;
+}
+#sec30 .section5 article .selfBox p {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: 300;
+}
+#sec30 .section5 article .selfBox ul li h5 {
+  color: #fff;
+}
+#sec30 .section5 article .selfBox .radioBox {
+  display: flex;
+  border-left: 2px solid #081231;
+}
+#sec30 .section5 article .selfBox .radioBox input {
+  display: none;
+}
+#sec30 .section5 article .selfBox label {
+  background: #fff;
+  color: #081231;
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  display: block;
+  height: 45px;
+  line-height: 41px;
+  border-top: 2px solid #081231;
+  border-bottom: 2px solid #081231;
+  border-right: 2px solid #081231;
+  text-align: center;
+  transition: all 0.3s;
+}
+#sec30 .section5 article .selfBox .radioBox input:checked + label {
+  background: #dfbe88;
+  color: #1d150d;
+  font-weight: 400;
+}
+#sec30 .section5 article .selfBox .sendBtn {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  width: 250px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: -2px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #dfbe88;
+  color: #1d150d;
+}
+#sec30 .section5 article .selfBox .step1 {
+  position: relative;
+  transition: all 0.3s;
+  z-index: 2;
+}
+#sec30 .section5 article .selfBox.on .step1 {
+  opacity: 0;
+  z-index: 1;
+}
+#sec30 .section5 article .selfBox form {
+  position: relative;
+}
+#sec30 .section5 article .selfBox .resultBox {
+  position: absolute;     /* 기존 position: absolute 유지 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;          /* flex */
+  align-items: center;
+  text-align: center;
+  padding-bottom: 100px;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 1;
+  /* 아래 추가: flex-wrap, 패딩 */
+  flex-wrap: wrap;        /* 여러줄로 자동 줄바꿈 */
+  justify-content: center;/* 가로 중앙 정렬 */
+  padding: 10px 0;          /* 내용 겹침 방지용 여백 */
+}
+#sec30 .section5 article .selfBox.on .resultBox {
+  opacity: 1;
+  z-index: 2;
+}
+#sec30 .section5 article .selfBox .resultBox p {
+  font-size: 18px;
+  line-height: 1.7;
+  /* width: 100%;   기존 width:100% → 주석 처리 */
+  /* 줄바꿈 허용 + 글자 겹침 방지 */
+  white-space: normal;
+  word-break: keep-all;
+  margin: 0 auto;
+  max-width: 90%;        /* 너무 길어지지 않도록 */
+}
+#sec30 .section5 article .selfBox .resultBox p strong {
+  font-size: 1.4em;
+}
+#sec30 .section5 article .selfBox .resultBox .sendBtn {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  width: 70%;
+  max-width: 250px;
+}
+#sec30 .section5 article .formBox {
+  background: #fff;
+}
+#sec30 .section5 article .formBox .telBox h4 {
+  background-color: #f8f4ee;
+  padding: 20px 0;
+  font-weight: 600;
+  line-height: 130%;
+  text-align: center;
+  margin: 20px 0 20px;
+  animation: onoff 2s infinite;
+}
+@keyframes onoff {
+  0% {opacity: 1;}
+  5% {opacity: 0;}
+  25% {opacity: 0;}
+  30% {opacity: 1;}
+  50% {opacity: 1;}
+  55% {opacity: 0;}
+  75% {opacity: 0;}
+  80% {opacity: 1;}
+  100% {opacity: 1;}
+}
+#sec30 .section5 article .formBox .telBox span {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #666;
+}
+#sec30 .section5 article .formBox .telBox a {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+  max-width: 250px;
+  padding: 5px 0 7px;
+  background: #2f69df;
+  display: block;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+#sec30 .section5 article .formBox .inBox {
+  background: #f7f7f7;
+}
+
+/* form2 */
+#sec30 .form2 {
+  text-align: center;
+  padding: 20px 0;
+}
+#sec30 .form2 .inner {
+  width: 100%;
+  margin: 0 auto;
+}
+#sec30 .form2 .formArea {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+}
+#sec30 .form2 .formGroup {
+  text-align: center;
+}
+#sec30 .form2 .form_table2 {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1em;
+}
+#sec30 .form2 .form_table2 tbody th {
+  padding: 10px 10px;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 100%;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+#sec30 .form2 .form_table2 tbody td {
+  padding: 10px 10px;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 100%;
+  font-size: 18px;
+  color: #fff;
+}
+#sec30 .form2 .input_style {
+  width: 100%;
+  padding-left: 10px;
+  height: 38px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
+
+/* form1 */
+#sec30 .form1 {
+  text-align: center;
+}
+#sec30 .form1 .inner {
+  width: 100%;
+  margin: 0 auto;
+}
+#sec30 .form1 .formArea {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+}
+#sec30 .form1 .formGroup {
+  text-align: center;
+}
+#sec30 .form1 .form_table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1em;
+}
+#sec30 .form1 .form_table tbody th {
+  padding: 10px 10px 10px 50px;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+#sec30 .form1 .form_table tbody td {
+  padding: 10px 50px 10px 10px;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 100%;
+  font-size: 18px;
+}
+#sec30 .form1 .input_style:focus, 
+#sec30 .wrap .sel_style:focus, 
+#sec30 .wrap .textarea_style:focus {
+  border-color: #303f99;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #fff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #fff;
+}
+#sec30 .form1 label {
+  float: left;
+  padding: 10px 0;
+  width: 33%;
+}
+#sec30 .form1 .input_style {
+  width: 100%;
+  padding-left: 10px;
+  height: 42px;
+  font-size: 18px;
+  background-color: #f8f8f8;
+}
+#sec30 .form1 .sel_style {
+  width: 100%;
+  padding-left: 10px;
+  height: 42px;
+  background-color: #f8f8f8;
+  font-size: 18px;
+  vertical-align: middle;
+}
+#sec30 .form1 .textarea_style {
+  width: 100%;
+  padding: 10px;
+  height: 90px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  resize: none;
+}
+#sec30 .form1 .submit_box {
+  width: 100%;
+  padding-top: 10px;
+}
+#sec30 .form1 .submit_box .btn01 {
+  width: 250px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: -2px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #62462b;
+  height: 60px;
+  /* line-height: 60px; */
+  color: #fff;
+}
+#sec30 .form1 .submit_box .btn01 img {
+  width: 100%;
+}
+
+/* 하단 고정 레이어 예시 */
+#sec30 #dbdb1 {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1000;
+  text-align: center;
+  height: 120px;
+}
+#sec30 #dbdb1 .inner {
+  width: 1100px;
+  display: inline-block;
+  background-color: #2f2f2f;
+}
+#sec30 #dbdb1 .formArea {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#sec30 #dbdb1 .formGroup {
+  text-align: center;
+}
+#sec30 #dbdb1 .form_table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1em;
+}
+#sec30 #dbdb1 .form_table tbody td {
+  padding: 2px 5px;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  line-height: 180%;
+}
+#sec30 #dbdb1 .input_style:focus, 
+#sec30 .sel_style:focus, 
+#sec30 .textarea_style:focus {
+  border-color: #303f99;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #fff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #fff;
+}
+#sec30 #dbdb1 .input_style {
+  width: 100%;
+  padding: 5px;
+  height: 34px;
+  font-size: 14px;
+  background-color: #fff;
+}
+#sec30 #dbdb1 .sel_style {
+  width: 100%;
+  padding: 0 5px;
+  height: 34px;
+  font-size: 14px;
+  vertical-align: middle;
+  background-color: #f8f8f8;
+}
+#sec30 #dbdb1 .textarea_style {
+  width: 100%;
+  padding: 5px;
+  height: 100px;
+  font-size: 14px;
+  background-color: #fff;
+}
+#sec30 #dbdb1 .btn01 {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  background: none;
+  color: #fff;
+  background-color: #62462b;
+  padding: 15px 0;
+}
+
+/* 스크롤 애니메이션(보이기/감추기) */
+#sec30 .show-on-scroll {
+  visibility: hidden;
+  transition: 0.5s;
+}
+#sec30 .show-on-scroll.shown {
+  visibility: visible;
+  transition: 0.5s;
+}
+
+/* 탭 메뉴(예시) */
+#sec30 .comm_tab1 {
+  display: block;
+  clear: both;
+  *zoom: 1;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+#sec30 .comm_tab1:after {
+  display: block;
+  height: 0;
+  content: ".";
+  font-size: 0;
+  visibility: hidden;
+  clear: both;
+}
+#sec30 .comm_tab1 > .tab_menu {
+  width: 100%;
+  margin: 0 auto;
+}
+#sec30 .comm_tab1 > .tab_menu > li {
+  float: left;
+  text-align: center;
+  font-size: 28px;
+  background-color: #fff;
+  letter-spacing: -1px;
+  width: 50%;
+  box-sizing: border-box;
+}
+#sec30 .comm_tab1 > .tab_menu .tit {
+  display: block;
+  padding: 30px 0;
+  font-weight: bold;
+  color: #ffdbd0;
+  border: 3px solid #ffdbd0;
+  cursor: pointer;
+  height: 76px;
+}
+#sec30 .comm_tab1 > .tab_menu .on .tit {
+  background-color: #ff640e;
+  color: #fff;
+  border: 3px solid #ff640e;
+  height: 76px;
+}
+#sec30 .comm_tab1 > .tab_cont {
+  float: left;
+  width: 100%;
+  clear: both;
+}
+#sec30 .comm_tab1 > .tab_cont > .cont {}
+#sec30 .comm_tab1 .comm_refer {}
+
+/*************************************************************
+ * 12) 자가진단 등 기타 팝업
+ *************************************************************/
+#sec30 .diagnosis-wrap {}
+#sec30 .diagnosis-wrap .chk-wrap {}
+#sec30 .diagnosis-wrap .chk-wrap > form {
+  height: 100%;
+}
+#sec30 .diagnosis-wrap .chk-wrap .tabcnt {
+  display: none;
+  height: 100%;
+  padding-bottom: 90px;
+}
+#sec30 .diagnosis-wrap .chk-wrap .tabcnt0 {
+  display: block;
+}
+#sec30 .diagnosis-wrap .chk-wrap .tabcnt-inner {
+  position: relative;
+  height: 100%;
+  font-size: 12px;
+}
+#sec30 .diagnosis-wrap .chk-wrap .move_btn {
+  left: 38%;
+  position: absolute;
+  bottom: 110px;
+  width: 54%;
+}
+#sec30 .diagnosis-wrap .chk-wrap .move_btn a {
+  display: inline-block;
+  width: 50%;
+  height: 50px;
+  background: #e0b979;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.04rem;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: top;
+}
+#sec30 .diagnosis-wrap .chk-wrap .move_btn a.block {
+  width: 100%;
+}
+#sec30 .diagnosis-wrap .chk-wrap .move_btn a.white {
+  background: #fff;
+  color: #d7d7d7;
+  border: 1px solid #d7d7d7;
+}
+#sec30 .diagnosis-wrap .chk-wrap .btn01 {
+  display: block;
+  height: 50px;
+  background: #dfbe88;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.04rem;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+#sec30 .diagnosis-wrap .chk-wrap .first-tem {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 0 50px;
+  text-align: center;
+  transform: translate(0, -50%);
+}
+#sec30 .diagnosis-wrap .chk-wrap .first-tem h3 {
+  padding-top: 170px;
+  color: #1a1a1a;
+  font-size: 52px;
+  font-weight: 300;
+  line-height: 64px;
+}
+#sec30 .diagnosis-wrap .chk-wrap .first-tem h3 strong {
+  display: block;
+  font-weight: 700;
+}
+#sec30 .diagnosis-wrap .chk-wrap .first-tem p {
+  padding-top: 40px;
+  color: #1a1a1a;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: -0.04rem;
+  line-height: 58px;
+}
+#sec30 .diagnosis-wrap .chk-wrap .first-tem p span {
+  color: #dfbe88;
+  font-weight: 400;
+}
+#sec30 .diagnosis-wrap .chk-wrap .title-back .back {
+  position: absolute;
+  top: 7%;
+  right: 50px;
+  display: block;
+  width: 100px;
+  height: 30px;
+  margin-top: -20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  background: #fff;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -0.04rem;
+  line-height: 30px;
+  cursor: pointer;
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap {
+  position: relative;
+  padding: 0 50px 0;
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .step {
+  position: relative;
+  font-size: 0;
+  margin-bottom: 25px;
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .step:after {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #e0e0e0;
+  content: '';
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .step li {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  padding-top: 50px;
+  color: #808080;
+  font-size: 16px;
+  letter-spacing: -0.04rem;
+  line-height: 1;
+  text-align: center;
+  vertical-align: top;
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .step li.active,
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .step li.fin {
+  color: #dfbe88;
+  font-weight: 500;
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .step li:after {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background-color: #b2b2b2;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .step li.active:after,
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .step li.fin:after {
+  background-color: #dfbe88;
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .chk-list h3 {
+  padding-bottom: 15px;
+  color: #1a1a1a;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.06rem;
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .chk-list h3 span {
+  font-size: 18px;
+  font-weight: 300;
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .chk-list ul {
+  overflow-y: auto;
+  width: calc(100% + 100px);
+  height: 440px;
+  margin-left: -50px;
+  padding: 0 50px 20px;
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .chk-list ul li + li {
+  margin-top: 12px;
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .chk-list ul li .check_chg {
+  position: relative;
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .chk-list ul li .check_chg input[type=radio],
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .chk-list ul li .check_chg input[type=checkbox] {
+  display: none;
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .chk-list ul li .check_chg input[type=radio] + label,
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .chk-list ul li .check_chg input[type=checkbox] + label {
+  display: block;
+  min-height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 25px;
+  padding: 0 50px 0 30px;
+  background: url('./img/chkbtn.png') no-repeat right 20px center;
+  color: #1a1a1a;
+  font-size: 20px;
+  letter-spacing: -0.04rem;
+  cursor: pointer;
+  line-height: 40px;
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .chk-list ul li .check_chg input[type=radio]:checked + label,
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .chk-list ul li .check_chg input[type=checkbox]:checked + label {
+  background-color: #f8f8f8;
+  background-image: url('./img/chkbtn_on.png');
+}
+#sec30 .diagnosis-wrap .chk-wrap .step-wrap .chk-list ul li .check_chg input[type=text] {
+  position: absolute;
+  top: 50%;
+  left: 75px;
+  width: 320px;
+  height: 28px;
+  margin-top: -14px;
+  padding: 0 8px;
+  border: 1px solid #e0e0e0;
+  color: #999;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.04rem;
+}
+#sec30 .diagnosis-wrap .last-tem {
+  padding: 20px 50px 0;
+}
+#sec30 .diagnosis-wrap .last-tem .text {
+  text-align: center;
+}
+#sec30 .diagnosis-wrap .last-tem .text h3 {
+  color: #1a1a1a;
+  font-size: 36px;
+  font-weight: 700;
+}
+#sec30 .diagnosis-wrap .last-tem .text h5 {
+  padding-top: 10px;
+  color: #1a1a1a;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -0.04rem;
+  line-height: 28px;
+}
+#sec30 .diagnosis-wrap .last-tem .text p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+#sec30 .diagnosis-wrap .last-tem .text h5 span {
+  color: #dfbe88;
+}
+#sec30 .diagnosis-wrap .last-tem .text .box {
+  margin-top: 35px;
+  padding: 27px 0;
+  background: #f7f7f7;
+  color: #1a1a1a;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -0.04rem;
+}
+#sec30 .diagnosis-wrap .last-tem .text .box span {
+  color: #dfbe88;
+}
+#sec30 .diagnosis-wrap .last-tem .table {
+  padding-top: 30px;
+}
+#sec30 .diagnosis-wrap .last-tem .table li {
+  position: relative;
+  padding-left: 140px;
+}
+#sec30 .diagnosis-wrap .last-tem .table li + li {
+  margin-top: 18px;
+}
+#sec30 .diagnosis-wrap .last-tem .table li label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #1a1a1a;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: -0.04rem;
+}
+#sec30 .diagnosis-wrap .last-tem .table li .input {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #e0e0e0;
+  padding: 0 8px;
+  color: #999;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: -0.04rem;
+}
+
+/* 팝업(예시) */
+.complete_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999;
+  display: none;
+}
+.complete_wrap .bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  z-index: 1;
+}
+.complete_wrap .popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 365px;
+  max-height: 90vh;
+  background: #fff;
+  z-index: 2;
+  width: 90%;
+  overflow: hidden;
+  max-width: 500px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 14px;
+  line-height: 0;
+  border-bottom: 0px solid #000;
+  background-color: none;
+}
+.complete_wrap .popup .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  font-weight: 600;
+}
+.complete_wrap .popup .close img {
+  width: 100%;
+  height: 100%;
+}
+.complete_wrap .popup .iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  overflow: hidden;
+}
+
+/* ===========================================================
+   1) 1200px 이하(데스크톱 중간 사이즈 ~ 태블릿 가로 등)
+   ----------------------------------------------------------- */
+   @media (max-width: 1340px) and (min-width: 1101px) {
+  
+  
+  /* 큰 헤딩(예: h1, h2, h3) 폰트 축소 */
+  #sec30 h1 {
+    font-size: 64px;  /* 기존 78px → 64px */
+    white-space: nowrap; /* 한 줄 유지 */
+  }
+  #sec30 h2 {
+    font-size: 48px;  /* 기존 60px → 48px */
+    white-space: nowrap;
+  }
+  #sec30 h3 {
+    font-size: 32px;  /* 기존 46px → 32px */
+    white-space: nowrap;
+  }
+  
+  
+  
+  /* 폼 안의 label, th 등도 패딩 줄여서 라인브레이크 방지 */
+  #sec30 .form_table tbody th,
+  #sec30 .form_table2 tbody th {
+    white-space: nowrap; /* 필요 시 두 줄 방지 */
+    padding: 8px 8px;
+    font-size: 16px;
+  }
+  #sec30 .form_table tbody td,
+  #sec30 .form_table2 tbody td {
+    white-space: nowrap; /* 필요 시 */
+    font-size: 16px;
+  }
+  
+  /* 그 외 박스나 section 폭·패딩 축소 예시 */
+  #sec30 .section5 article > div {
+    padding: 40px; /* 기존 50px→40px */
+  }
+}
+
+/* ===========================================================
+   2) 640px 이하(모바일)
+   ----------------------------------------------------------- */
+@media (max-width: 1100px) {
+  /* wrap 및 contents 폭 100% → 이미 적용되어 있지만 재확인 */
+  #sec30 .wrap {
+    width: 100%;
+    margin: 0 auto; 
+  }
+  #sec30 .wrap .contents {
+    width: 100%;
+    margin: 0 auto;
+    position: static;
+  }
+
+
+  /* 헤딩 폰트 더 축소, 줄바꿈 방지 */
+  #sec30 h1 {
+    font-size: 34px;
+    white-space: nowrap;
+  }
+  #sec30 h2 {
+    font-size: 24px;
+    white-space: nowrap;
+  }
+  #sec30 h3 {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+ 
+
+  /* 폼 영역 */
+  #sec30 .form_table tbody th,
+  #sec30 .form_table2 tbody th {
+    font-size: 14px;
+    white-space: nowrap;
+    padding: 6px;
+  }
+  #sec30 .form_table tbody td,
+  #sec30 .form_table2 tbody td {
+    font-size: 14px;
+    white-space: nowrap;
+    padding: 6px;
+  }
+  
+  /* 예시: .job_list → 2열로 변경, 라벨이 길 경우 말줄임 */
+  #sec30 .job_list li {
+    width: 48%;
+    margin: 1%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #sec30 .job_list p {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  
+  /* section5 article -> flex 해제(세로배치), padding 축소 */
+  #sec30 .section5 article {
+    flex-direction: column;
+    box-shadow: none;
+  }
+  #sec30 .section5 article > div {
+    width: 100%;
+    padding: 20px;
+	  height:650px;
+  }
+  
+  /* .main_counter, .point 등도 2열로 → 이미 코드 있음. 
+     필요하면 white-space: nowrap 처리 */
+  #sec30 ul.main_counter,
+  #sec30 ul.point {
+    width: 90%;
+  }
+  #sec30 ul.main_counter li,
+  #sec30 ul.point li {
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* 그 외 디자인 맞춰 세부 보완 */
+  /* 예: .telBox a 폰트 크기 더 줄이기 */
+  #sec30 .telBox a {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+}
+
+  /* ========== 반응형: 모바일 글자 크기, 간격 조정 ========== */
+  @media (max-width: 500px) {
+      /* h1, h2, h3 폰트 더 축소 */
+      #sec30 h1 { font-size: 24px; }
+      #sec30 h2 { font-size: 20px; }
+      #sec30 h3 { font-size: 16px; }
+
+      /* 버튼 폭, 폰트 축소 */
+      #sec30 .go_button, #sec30 .start_button, #sec30 .btn01 {
+        width: 90%;
+        font-size: 16px;
+        padding: 15px 0;
+      }
+
+      /* section5 article 내부 높이 자동 + 패딩 축소 */
+      #sec30 .section5 article > div {
+        width: 100%;
+        padding: 15px;
+        height: auto;  /* 고정 높이 제거 */
+        box-sizing: border-box;
+		height:650px;
+      }
+
+      /* 폼 폰트 줄이기 */
+      #sec30 .form_table tbody th,
+      #sec30 .form_table2 tbody th,
+      #sec30 .form_table tbody td,
+      #sec30 .form_table2 tbody td {
+        font-size: 13px !important;
+        padding: 5px;
+      }
+	  #sec30 .section5 article .selfBox p{
+		font-size:14px;
+	  }
+
+	  #sec30 .form2 .input_style{
+		font-size:13px;
+	  }
+
+	  #sec30 .section5 article .selfBox .sendBtn {
+		width:200px;height:60px;font-size:18px;
+	}
+
+      /* 텍스트 길이 제한, 말줄임 방지 */
+      #sec30 .telBox h4 {
+        font-size: 16px;
+        line-height: 1.4;
+        padding: 10px 0;
+      }
+      #sec30 .telBox a {
+        font-size: 16px;
+        width: 90%;
+        max-width: 250px;
+      }
+
+      /* 기타 UI 요소들 */
+      #sec30 .top_btn li { padding: 10px 10px; }
+      #sec30 .top_btn li a { font-size: 14px; }
+      #sec30 .section5 article {
+        box-shadow: none; /* 모바일에서 그림자 생략 */
+      }
+    }
+
