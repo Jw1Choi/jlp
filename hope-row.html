@@ -1305,11 +1305,141 @@ height:140px;
             
     
               
-                            <!-- <div class="main"  style="padding-top:0px;">
+                            <div class="main"  style="padding-top:0px;">
       
         
             <style>
        
+
+/* 異붿쿇*/
+.main .recommend .inner {
+    position: relative;
+    display: flex;
+    padding-top: 130px;
+    padding-bottom: 210px;
+}
+.main .recommend .title {
+    width: 52rem;
+    /* margin-right: 13.8rem */
+}
+.main .recommend .title h3 {
+    line-height: 160%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.main .recommend .swiper_wrap .swiper-slide {
+    height: 48rem;
+}
+.main .recommend .swiper_wrap .thumb {
+    overflow: hidden;
+    height: 100%;
+    border-radius: 3rem;
+}
+.main .recommend .swiper_wrap .thumb img {
+    height: 100%;
+}
+.main .recommend .swiper_wrap .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 4.5rem 0 0;
+    color: #fff;
+    z-index: 2;
+    border:0px;
+    margin-top:30%;
+}
+.main .recommend .swiper_wrap .card .category {
+    display: block;
+    line-height: 2.55rem;
+    letter-spacing: 0.16em;
+    /* font-size: 1.7rem; */
+    font-weight: 700;
+}
+.main .recommend .swiper_wrap .card strong {
+    display: block;
+    margin-top: 1.8rem;
+    color: #fff;
+    line-height: 3.6rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.main .recommend .swiper_wrap .card p {
+    margin-top: 1.8rem;
+    line-height: 2.625rem;
+    letter-spacing: -0.03em;
+    color: #fff;
+    font-size: 2.2rem;
+}
+.main .recommend .swiper_wrap .thumb::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    /* background: rgba(0, 0, 0, 65%); */
+    z-index: 1;
+}
+.main .recommend .swiper_wrap .card .btn_view {
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.card .txt{
+  background-color: rgba(0, 0, 0, .7);
+  padding:40px;  
+  font-size:1.4rem;
+}
+/* only pc */
+@media (min-width: 1181px) {
+    .main .recommend .swiper_wrap .card .btn_view {
+        border-color: #fff;
+        background-color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .main .recommend .swiper_wrap .thumb::before {
+        transition: all 0.3s;
+    }
+    .main .recommend .swiper_wrap .swiper-slide:hover .btn_view {
+        opacity: 1;
+    }
+    .main .recommend .swiper_wrap .thumb img {
+        transition: all 0.3s;
+        transform: scale(1) rotate(0.001deg);
+    }
+    .main .recommend .swiper_wrap .swiper-slide:hover .thumb img {
+        transform: scale(1.05) rotate(0.001deg);
+    }
+    .main .recommend .swiper_wrap .swiper-slide:hover .thumb::before {
+        z-index: 1;
+        background: rgba(0, 0, 0, 25%);
+    }
+    .main .recommend .swiper_wrap .card .btn_view:hover {
+        border-color: #222;
+        color: #fff;
+        background-color: #222;
+    }
+    .main .recommend .swiper_wrap .card .btn_view:hover span {
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width: 1180px) {
+    .main .recommend .swiper_wrap .card {
+        padding: 3rem 0 0;
+    }
+    .main .recommend .swiper_wrap .thumb::before {
+        background: rgba(0, 0, 0, 25%);
+    }
+}
                 .popup-overlay {
                 display: none;
                 position: fixed;
@@ -1864,7 +1994,7 @@ height:140px;
                 
                 <script data-no-minify="1" async src="https://www.nhreits.com/wp-content/plugins/rocket-lazy-load/assets/js/16.1/lazyload.min.js"></script>
             
-         -->
+        
     
     
     
